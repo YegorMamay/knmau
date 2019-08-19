@@ -1,7 +1,6 @@
 .nav {
     display: block;
     position: relative;
-    margin: 10px 0;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
     text-align: center;
     background: $menuBgColor;
@@ -16,10 +15,18 @@
         &-item {
             display: inline-block;
             vertical-align: middle;
-            padding: 5px;
+            padding: 4px;
+
+            a {
+                font-family: $fontFamilyOne;
+            }
 
             &:hover {
                 background: $menuBgColorActive;
+
+                a {
+                    color: $menuFontColorActive;
+                }
             }
 
             .menu-item-has-children-arrow {
@@ -86,7 +93,7 @@
             }
 
             &-current {
-                border-bottom: 5px solid $menuBgColorActive;
+                border-bottom: 4px solid $menuBgColorActive;
                 padding-bottom: 0;
             }
 

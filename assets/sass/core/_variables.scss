@@ -6,10 +6,10 @@ $borderRadius: 0;
 $shadow: 0 0 10px rgba(#000, .2);
 
 // BRAND
-$themeColorOne: #2c3e50; // Обычно самый темный цвет. Используется для:
+$themeColorOne: #1e2c4f; // Обычно самый темный цвет. Используется для:
 // заголовков h1-h6 - $titleFontColor и других.
 
-$themeColorTwo: #e74c3c; // Основной "брендовый" цвет.
+$themeColorTwo: #a63031; // Основной "брендовый" цвет.
 // Поменять значение этой переменной согласно макета обязательно!
 
 
@@ -30,9 +30,9 @@ $textHighlightBgColor: $themeColorTwo;
 $textHighlightColor: #fff;
 
 // MENU
-$menuBgColor: $themeColorOne;
+$menuBgColor: white;
 $menuBgColorActive: $themeColorTwo;
-$menuFontColor: #fff;
+$menuFontColor: #000;
 $menuFontColorActive: #fff;
 
 $navArrowColor: #fff;

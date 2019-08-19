@@ -1,21 +1,33 @@
 .pre-header {
+    background-color: $themeColorOne;
     padding: 5px 0;
-    display: flex;
-    justify-content: space-between;
+
+    .inner-wrap {
+        display: flex;
+        justify-content: space-between;
+
+        .fab {
+            color: white;
+        }
+    }
 }
 
 .page-header {
-    padding: 10px 0;
+    padding: 25px 0;
     background-color: $headerBgColor;
     color: $headerFontColor;
+    background-image: url(/wp-content/themes/knmau/assets/img/header-bg.jpg);
 }
 
 .logo {
+    width: 96%;
+
     &,
     &-link,
     &-img {
-        display: inline-block;
+        display: block;
         vertical-align: middle;
+        margin: 0 auto;
     }
 }
 
@@ -102,6 +114,12 @@
 
         a {
             display: block;
+            color: $textMutedColor;
+            font-family: $fontFamilyOne;
         }
+    }
+
+    .current-lang a {
+        color: white;
     }
 }
