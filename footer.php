@@ -2,6 +2,7 @@
 
 <footer class="footer js-footer">
     <?php if (is_active_sidebar('footer-widget-area')) : ?>
+       <div class="sp-xs-4"></div>
         <div class="pre-footer">
            <div class="sp-xs-4"></div>
             <div class="container">
