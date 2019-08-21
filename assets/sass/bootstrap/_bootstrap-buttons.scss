@@ -96,7 +96,7 @@ $btn-link-hover-decoration: underline !default;
     &:focus,
     &.focus {
         outline: 0;
-        box-shadow: $btn-focus-box-shadow;
+        //box-shadow: $btn-focus-box-shadow;
     }
 
     &.disabled,
@@ -112,10 +112,10 @@ $btn-link-hover-decoration: underline !default;
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active {
         background-image: none;
-        box-shadow: $btn-active-box-shadow;
+        //box-shadow: $btn-active-box-shadow;
 
         &:focus {
-            box-shadow: $btn-focus-box-shadow, $btn-active-box-shadow;
+            //box-shadow: $btn-focus-box-shadow, $btn-active-box-shadow;
         }
     }
 }
@@ -158,9 +158,9 @@ fieldset:disabled a.btn {
         &:focus,
         &.focus {
             @if $btn-enable-shadows {
-                box-shadow: $btn-box-shadow, 0 0 0 $btn-focus-width rgba($border, .5);
+                //box-shadow: $btn-box-shadow, 0 0 0 $btn-focus-width rgba($border, .5);
             } @else {
-                box-shadow: 0 0 0 $btn-focus-width rgba($border, .5);
+                //box-shadow: 0 0 0 $btn-focus-width rgba($border, .5);
             }
         }
 
@@ -210,7 +210,7 @@ fieldset:disabled a.btn {
 
         &:focus,
         &.focus {
-            box-shadow: 0 0 0 $btn-focus-width rgba($color, .5);
+            //box-shadow: 0 0 0 $btn-focus-width rgba($color, .5);
         }
 
         &.disabled,

@@ -73,5 +73,5 @@
                 <span class="hamburger-inner"></span>
             </span>
             </button>
-            <div class="logo"><?php get_default_logo_link(); ?></div>
+            <div class="logo"><img src="/wp-content/uploads/logo.png" alt="НМАУ" class="logo-img-mob"></div>
         </div>

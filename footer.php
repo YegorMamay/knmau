@@ -3,6 +3,7 @@
 <footer class="footer js-footer">
     <?php if (is_active_sidebar('footer-widget-area')) : ?>
         <div class="pre-footer">
+           <div class="sp-xs-4"></div>
             <div class="container">
                 <div class="row">
                     <?php dynamic_sidebar('footer-widget-area'); ?>
@@ -12,11 +13,17 @@
     <?php endif; ?>
 
     <div class="copyright">
-        <p class="container">
+       <div class="container">
+       <div class="flex-wrap">
+        <div class="copy">
+            &copy; <?php echo date('Y'); ?> <?php _e('Національна музична академія України імені П.І. Чайковського', 'brainworks') ?>
+        </div>
+        <div class="developer">
             <?php _e('Developed by', 'brainworks') ?>
             <a href="https://brainworks.pro/" target="_blank">BRAIN WORKS</a>
-            &copy; <?php echo date('Y'); ?>
-        </p>
+        </div>
+        </div>
+        </div>
     </div>
 </footer>
 

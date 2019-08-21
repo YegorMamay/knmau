@@ -5,6 +5,7 @@
 ?>
 
 <?php get_header(); ?>
+<?php layerslider(1) ?>
 
 <?php get_template_part('loops/content', 'home'); ?>
 

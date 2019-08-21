@@ -118,6 +118,13 @@
     }
 
     &-title {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-family: $fontFamilyOne;
+        font-weight: bold;
     }
+}
+
+.media_image-2 img {
+    width: 200px !important;
 }

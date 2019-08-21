@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Lora:400,700&display=swap&subset=cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:400,700&display=swap&subset=cyrillic-ext');
 
 //font-family: 'Lora', serif;
-$font-family-sans-serif: 'Helvetica', 'Arial', sans-serif;
+//font-family: 'Roboto', sans-serif;
+$font-family-sans-serif: 'Arial', 'Helvetica', sans-serif;
 $font-family-serif: 'Georgia', 'Times New Roman', 'Times', serif;
 $font-family-monospace: 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
 
-$fontFamilyOne: $font-family-sans-serif; // titles
+$fontFamilyOne: 'Roboto', sans-serif; // titles
 $fontFamilyTwo: 'Lora', serif; // body

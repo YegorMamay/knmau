@@ -12,6 +12,8 @@ $themeColorOne: #1e2c4f; // Обычно самый темный цвет. Ис�
 $themeColorTwo: #a63031; // Основной "брендовый" цвет.
 // Поменять значение этой переменной согласно макета обязательно!
 
+$themeColorThree: #edeef0;
+
 
 // SELECTION: цвет фона и текста при выделении его курсором
 $selectionBgColor: $themeColorTwo;
@@ -57,9 +59,12 @@ $menu-close-size: 25px;
 $menu-close-color: #fff;
 $menuContainerMobilePaddingTop: 30%;
 
+// TEXT
+$textMutedColor: #5a5a5a;
+
 // FOOTER
-$footerBgColor: $themeColorOne;
-$footerFontColor: #fff;
+$footerBgColor: $themeColorThree;
+$footerFontColor: $textMutedColor;
 $footerLinkColorActive: darken($footerFontColor, 5%);
 
 // WRAPPER
@@ -83,8 +88,6 @@ $tableOddFontColor: #fff;
 $tableEvenBgColor: $themeColorTwo;
 $tableEvenFontColor: #fff;
 
-// TEXT
-$textMutedColor: #aaa;
 
 // Icons
 $iconColor: $themeColorTwo;

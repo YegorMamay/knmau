@@ -67,12 +67,28 @@
         margin: 0 5px;
     }
 
+    &-item:last-child {
+        margin: 0 5px;
+
+        a {
+            &:after {
+                display: none;
+            }
+        }
+    }
+
     &-link {
         display: block;
         text-align: center;
         text-decoration: none;
 
         &:hover {
+        }
+
+        &:after {
+            content: "/";
+            color: darken($themeColorThree, 35%);
+            margin-left: 15px;
         }
     }
 }
@@ -114,8 +130,21 @@
 
         a {
             display: block;
-            color: $textMutedColor;
+            color: darken($themeColorThree, 35%);
             font-family: $fontFamilyOne;
+
+            &:after {
+                content: "/";
+                margin-left: 15px;
+            }
+        }
+    }
+
+    &-item:last-child {
+        a {
+            &:after {
+                display: none;
+            }
         }
     }
 

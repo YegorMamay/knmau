@@ -8,13 +8,32 @@
 .pre-footer {
     padding: 20px 0;
     background-color: lighten($footerBgColor, 10%);
+    border-top: 1px solid $footerBgColor;
+    text-align: center;
 }
 
 .copyright {
     padding: 14px 0;
     background-color: $footerBgColor;
-    text-align: center;
     color: $footerFontColor;
+
+    .flex-wrap {
+        display: flex;
+        justify-content: space-between;
+
+        //xs 544
+        @media #{$mobile} {
+            display: block;
+            text-align: center;
+        }
+
+        //sm 545 - 768
+        @media #{$tablet} {
+            display: block;
+            text-align: center;
+        }
+    }
+
 
     a {
         color: $footerFontColor;
