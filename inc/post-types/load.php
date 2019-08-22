@@ -3,3 +3,4 @@
     require "teachers.php";
     require "departments.php";
     require "videos.php";
+    require "faculties.php";
