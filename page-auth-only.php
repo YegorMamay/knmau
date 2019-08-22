@@ -5,6 +5,8 @@
 get_header();
 the_post(); ?>
 
+    <div class="container">
+
     <div class="sp-xs-2"></div>
     <?php if(bw_user_logged_in()): ?>
         <?php the_content(); ?>
@@ -13,4 +15,6 @@ the_post(); ?>
         <?php echo do_shortcode('[bw-custom-auth]'); ?>
     <?php endif; ?>
     <div class="sp-xs-2"></div>
+
+    </div>
 <?php get_footer(); ?>

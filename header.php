@@ -14,7 +14,7 @@
 </head>
 <body <?php body_class(); ?> id="top">
 
-<?php /* wp_body_open(); */?>
+<?php wp_body_open(); ?>
 <div class="wrapper">
     <div class="pre-header">
        <div class="container">
@@ -65,7 +65,7 @@
         </nav>
     <?php } ?>
 
-    <div class="container js-container">
+    <div class="js-container">
 
         <div class="nav-mobile-header">
             <button class="hamburger js-hamburger" type="button" tabindex="0">

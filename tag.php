@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div class="container">
 
 <?php if (function_exists('kama_breadcrumbs')) kama_breadcrumbs(' » '); ?>
 
@@ -10,5 +11,6 @@
 
 <?php get_template_part('loops/content-2', get_post_format()); ?>
 
+</div>
 <?php get_footer(); ?>
 

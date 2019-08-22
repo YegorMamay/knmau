@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div class="container">
 
 <div class="sp-xs-2 sp-sm-2 sp-md-2 sp-lg-2 sp-xl-2"></div>
 <h1><?php _e('Search Results for', 'brainworks'); ?> &ldquo;<?php the_search_query(); ?>&rdquo;</h1>
@@ -9,4 +10,5 @@
 
 <?php get_template_part('loops/content', 'search'); ?>
 
+</div>
 <?php get_footer(); ?>
