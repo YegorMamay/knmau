@@ -1,4 +1,5 @@
 <?php 
     require "reviews.php";
     require "teachers.php";
-    require "department.php";
+    require "departments.php";
+    require "videos.php";
