@@ -8,7 +8,7 @@ Author URI: https://brainworks.com.ua
 Description:
 License:
 License URI:
-Version: 4.8.6
+Version: 23.08.2019
 Tags: one-column, two-columns, full-width-template, e-commerce
 */
 
@@ -196,6 +196,10 @@ img {
     }
 }
 
+.dark-bg {
+    background-color: $themeColorOne;
+}
+
 /* HOME PAGE */
 
 
@@ -213,10 +217,19 @@ img {
 }
 
 .more-about {
-    background-color: $themeColorOne;
-
     h2 {
         color: white;
+    }
+
+    img {
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: white;
+        font-family: $fontFamilyOne;
+        text-align: center;
+        text-transform: uppercase;
     }
 }
 

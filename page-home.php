@@ -18,9 +18,13 @@
     <div class="sp-xs-6"></div>
 </div>
 
-<div class="main-video-news">
+<div class="main-video-news dark-bg">
+<div class="sp-xs-6"></div>
 
+<div class="sp-xs-6"></div>
 </div>
+
+<div class="sp-xs-6"></div>
 
 <div class="concerts">
 
@@ -78,24 +82,45 @@
     <div class="sp-xs-6"></div>
 </div>
 
-<div class="more-about">
+<div class="more-about dark-bg">
     <div class="sp-xs-6"></div>
 
     <h2 class="text-center"><?php _e('Більше про НМАУіЧ', 'brainworks') ?></h2>
 
     <div class="sp-xs-3"></div>
     <div class="divider"></div>
-    <div class="sp-xs-3"></div>
+    <div class="sp-xs-6"></div>
 
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-3">
-
+                <a href="#">
+                    <img src="https://knmau.brainworks.pro/wp-content/uploads/temp-img-16x10-735x459.jpg" alt="">
+                    <p>Гуртожиток</p>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3">
+                <a href="#">
+                    <img src="https://knmau.brainworks.pro/wp-content/uploads/temp-img-16x10-735x459.jpg" alt="">
+                    <p>Студентське життя</p>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3">
+                <a href="#">
+                    <img src="https://knmau.brainworks.pro/wp-content/uploads/temp-img-16x10-735x459.jpg" alt="">
+                    <p>Віртуальний тур</p>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3">
+                <a href="#">
+                    <img src="https://knmau.brainworks.pro/wp-content/uploads/temp-img-16x10-735x459.jpg" alt="">
+                    <p>Фотогалерея</p>
+                </a>
             </div>
         </div>
     </div>
 
-  <div class="sp-xs-6"></div>
+  <div class="sp-xs-8"></div>
 </div>
 
 <?php get_template_part('loops/content', 'home'); ?>
