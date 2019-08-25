@@ -203,6 +203,10 @@ img {
 
 /* HOME PAGE */
 
+.concerts {
+    background-color: $themeColorThree;
+}
+
 
 /* faculties */
 .faculties {
@@ -235,5 +239,26 @@ img {
 }
 
 
+.other-content {
+    &-item {
+        display: block;
+        padding: 50px;
+        box-shadow: 0 0 7px 3px $themeColorThree;
+        min-height: 233px;
+        height: auto;
 
+        img {
+            width: 80px;
+            margin: 0 auto 20px auto;
+            display: block;
+        }
 
+        p {
+            text-align: center;
+            text-transform: uppercase;
+            font-family: $fontFamilyOne;
+        }
+
+    }
+
+}
