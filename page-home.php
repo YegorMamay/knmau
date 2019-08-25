@@ -24,11 +24,15 @@
 <div class="sp-xs-6"></div>
 </div>
 
-<div class="sp-xs-6"></div>
-
 <div class="concerts">
+    <div class="sp-xs-6"></div>
 
+
+
+    <div class="sp-xs-6"></div>
 </div>
+
+<div class="sp-xs-6"></div>
 
 <div class="faculties">
 
@@ -42,38 +46,38 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-2">
                 <a href="#" class="shadow-hover">
-    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/piano-fac.svg" alt="<?php _e('Фортепіанний факультет', 'brainworks') ?>">
+    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/piano-fac.svg">
     	           <p>Фортепіанний факультет</p>
     	       </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
                 <a href="#" class="shadow-hover">
-    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/piano-fac.svg" alt="<?php _e('Фортепіанний факультет', 'brainworks') ?>">
-    	           <p>Фортепіанний факультет</p>
+    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/vocal-conductor-fac.svg">
+    	           <p>Вокальний та диригентський факультет</p>
     	       </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
                 <a href="#" class="shadow-hover">
-    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/piano-fac.svg" alt="<?php _e('Фортепіанний факультет', 'brainworks') ?>">
-    	           <p>Фортепіанний факультет</p>
+    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/orchestra-fac.svg">
+    	           <p>Оркестровий факультет</p>
     	       </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
                 <a href="#" class="shadow-hover">
-    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/piano-fac.svg" alt="<?php _e('Фортепіанний факультет', 'brainworks') ?>">
-    	           <p>Фортепіанний факультет</p>
+    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/folk-instruments-fac.svg">
+    	           <p>Факультет народних інструментів</p>
     	       </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
                 <a href="#" class="shadow-hover">
-    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/piano-fac.svg" alt="<?php _e('Фортепіанний факультет', 'brainworks') ?>">
-    	           <p>Фортепіанний факультет</p>
+    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/composer-fac.svg">
+    	           <p>Факультет історико-теоретичний, композиторський та іноземних студентів</p>
     	       </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
                 <a href="#" class="shadow-hover">
-    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/piano-fac.svg" alt="<?php _e('Фортепіанний факультет', 'brainworks') ?>">
-    	           <p>Фортепіанний факультет</p>
+    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/interdepartmental-fac.svg">
+    	           <p>Оголошення</p>
     	       </a>
             </div>
         </div>
@@ -121,6 +125,35 @@
     </div>
 
   <div class="sp-xs-8"></div>
+</div>
+
+<div class="other-content">
+    <div class="sp-xs-10"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <a href="#" class="other-content-item">
+    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/reward.svg">
+    	           <p>Оголошення</p>
+    	        </a>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <a href="#" class="other-content-item">
+    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/reward.svg">
+    	           <p>Оголошення</p>
+    	        </a>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <a href="#" class="other-content-item">
+    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/library.svg">
+    	           <p>Оголошення</p>
+    	        </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="sp-xs-6"></div>
 </div>
 
 <?php get_template_part('loops/content', 'home'); ?>
