@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:400,700&display=swap&subset=cyrillic-ext');
+// @import url('https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:400,700&display=swap&subset=cyrillic-ext');
+
+@font-face {
+    src: url('assets/fonts/FuturaNewDemi.otf');
+    font-family: "Futura";
+}
+
+@font-face {
+    src: url('assets/fonts/Lora-Regular_0.ttf');
+    font-family: "Lora";
+}
 
 //font-family: 'Lora', serif;
 //font-family: 'Roboto', sans-serif;
@@ -6,5 +16,5 @@ $font-family-sans-serif: 'Arial', 'Helvetica', sans-serif;
 $font-family-serif: 'Georgia', 'Times New Roman', 'Times', serif;
 $font-family-monospace: 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
 
-$fontFamilyOne: 'Roboto', sans-serif; // без засечек
-$fontFamilyTwo: 'Lora', serif; // с засечками
+$fontFamilyOne: "Futura"; // без засечек
+$fontFamilyTwo: "Lora"; // с засечками

@@ -595,3 +595,45 @@ if (!function_exists('bw_reviews_shortcode')) {
 
     add_shortcode('bw-reviews', 'bw_reviews_shortcode');
 }
+
+if (!function_exists('bw_teachers_shortcode')) {
+    function bw_teachers_shortcode($atts) {
+        $atts = shortcode_atts(
+            array( 'department' => '0' ),
+            $atts
+        );
+
+        $id = $atts['department'];
+
+        if ($id == '0') {
+            return;
+        }
+
+        $terms = get_the_terms($id, 'departments')[0];
+        $posts = get_posts([
+            'post_type' => 'teachers',
+            'posts_per_page' => -1,
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'departments',
+                    'field' => 'term_id',
+                    'terms' => $terms->term_id,
+                )
+            )
+        ]);
+        $output = '<div class="teachers-slider">';
+        foreach ($posts as $post) {
+            $output .= '<div class="teachers-slider__slide">
+                <div>
+                    <img src="'.get_the_post_thumbnail_url($post->ID, 'medium').'" alt="" title="" />
+                    <h4>'.$post->post_title.'</h4>
+                    <p>'.get_post_meta($post->ID, 'info', true).'</p>
+                </div>
+            </div>';
+        }
+        $output .= '</div>';
+        return $output;
+    }
+    
+    add_shortcode('bw-teachers-slider', 'bw_teachers_shortcode');
+} 

@@ -27,7 +27,7 @@
             'hierarchical' => false,
             'rewrite' => array('slug' => 'departments', 'with_front' => true),
             'query_var' => true,
-            'supports' => array('title', 'thumbnail'),
+            'supports' => array('title', 'thumbnail', 'editor'),
         );
 
         register_post_type('departments', $args);

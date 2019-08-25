@@ -569,3 +569,27 @@ if ( ! function_exists( 'woocommerce_cart' ) ) {
 		echo $link;
 	}
 }
+
+if (!function_exists('get_department_breadcrumbs')) {
+    function get_department_breadcrumbs($id) {
+        if (!$id) return;
+        $terms = get_the_terms($id, 'faculties')[0];
+        return implode('/', [
+            '<a href="/"><i class="fa fa-home"></i></a>',
+            '<a href="/faculties">'.__('Факультети', 'brainworks').'</a>',
+            '<a href="/faculties/'.$terms->slug.'">'.$terms->name.'</a>',
+            '<span>'.get_the_title($id).'</span>'
+        ]);
+    }
+}
+
+if (!function_exists('get_social_icon')) {
+    function get_social_icon($url) {
+        $cl = '';
+        if (strpos($url, 'facebook') !== false) $cl = 'fab fa-facebook-f';
+        else if (strpos($url, 'twitter') !== false) $cl = 'fab fa-twitter';
+        else if (strpos($url, 'instagram') !== false) $cl = 'fab fa-instagram';
+
+        return sprintf('<i class="%s"></i>', $cl);
+    }
+}

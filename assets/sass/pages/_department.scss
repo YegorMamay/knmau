@@ -1,0 +1,259 @@
+.department {
+  &-header {
+    padding: 80px 0;
+    text-align: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($themeColorOne, 0.5);
+    }
+
+    h1 {
+      position: relative;
+      display: block;
+
+      color: #fff;
+      font-size: 36px;
+      padding-top: 15px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        display: block;
+        width: 50px;
+        height: 1px;
+        background-color: #fff;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  &-wrapper {
+    .tabs {
+      .controls {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        > button {
+          padding: 15px 15px;
+          border: 1.5px solid $themeColorTwo;
+          font-size: 12px;
+          font-family: $fontFamilyOne;
+          text-transform: uppercase;
+          color: #ccc;
+          background-color: #fff;
+
+          flex: 1;
+
+          transition: all 0.4s ease-in-out;
+          cursor: pointer;
+          &.active,
+          &:hover {
+            background-color: $themeColorTwo;
+            color: #fff;
+          }
+        }
+      }
+      .content {
+        > div {
+          padding: 35px 0;
+          font-size: 16px;
+          color: #353535;
+
+          > .row {
+            &:not(:last-child) {
+              margin-bottom: 25px;
+            }
+          }
+
+          span.big-letter {
+            float: left;
+            font-size: 42px;
+            line-height: 48px;
+            margin-right: 8px;
+            color: #000;
+          }
+        }
+      }
+    }
+
+    .kama_breadcrumbs {
+      font-size: 16px;
+      color: #a0a0a3;
+
+      a,
+      span {
+        color: #a0a0a3;
+        font-family: $fontFamilyOne;
+        margin-right: 10px;
+        margin-left: 10px;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: bold;
+
+        &:first-child {
+          margin-left: 0px;
+        }
+
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+
+  &-slider-wrapper {
+    padding: 60px 0;
+    background-color: $themeColorOne;
+
+    h2 {
+      color: #fff;
+      font-size: 36px;
+      margin: 0 0 35px;
+      padding: 0;
+    }
+  }
+
+  &-content-wrapper {
+    padding: 60px 0;
+  }
+
+  &-subjects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    > p {
+      min-width: 50%;
+      max-width: 50%;
+      font-size: 16px;
+      margin-bottom: 5px;
+      color: #353535;
+
+      &:nth-child(odd) {
+        text-align: left;
+      }
+
+      &:nth-child(even) {
+        text-align: right;
+      }
+    }
+  }
+
+  &-contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    border: 1px solid #edeef0;
+    > div {
+      flex: 1;
+      border-right: 1px solid #edeef0;
+      padding: 50px 20px;
+      text-align: center;
+
+      strong {
+        display: block;
+        font-size: 14px;
+        font-family: $fontFamilyOne;
+        text-transform: uppercase;
+
+        margin-bottom: 5px;
+      }
+
+      a,
+      span {
+        font-size: 14px;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          list-style: none;
+          i {
+            color: $themeColorTwo;
+            font-size: 18px;
+          }
+        }
+      }
+
+      &:last-child {
+        border-right: 0px;
+      }
+    }
+  }
+}
+
+.teachers-slider {
+  position: relative;
+  &__slide {
+    > div {
+      max-width: 250px;
+      margin: 0 auto;
+    }
+
+    img {
+      display: block;
+    }
+
+    h4 {
+      color: #fff;
+      font-size: 16px;
+      margin: 15px 0 8px;
+      padding: 0;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      color: #ccc;
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid #4b5672;
+    color: #4b5672;
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &.slick-prev {
+      left: -50px;
+    }
+
+    &.slick-next {
+      right: -50px;
+    }
+  }
+}

@@ -29,6 +29,23 @@
                 removeAllStyles($(".js-menu"));
             }
         });
+        $(".teachers-slider").slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: true,
+            prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-chevron-left" /></button>',
+            nextArrow: '<button type="button" class="slick-next"><i class="fa fa-chevron-right" /></button>'
+        });
+        $(".tabs").each(function(_, element) {
+            var tabs$ = $(element), controls$ = tabs$.find(".controls > button"), content$ = tabs$.find(".content > div");
+            controls$.each(function(index, control) {
+                var control$ = $(control);
+                control$.on("click", function(_) {
+                    content$.hide().eq(index).slideDown(400);
+                    controls$.removeClass("active").eq(index).addClass("active");
+                });
+            }).eq(0).click();
+        });
     });
     var stickFooter = function stickFooter(footer, container) {
         var previousHeight, currentHeight;
