@@ -204,6 +204,90 @@
       }
     }
   }
+
+  &-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__item {
+      width: 30%;
+
+      border: 1.5px solid #edeef0;
+      padding: 50px;
+      text-align: center;
+
+      transition: background-color 0.4s ease-in-out;
+
+      i {
+        font-size: 42px;
+        color: $themeColorTwo;
+        display: block;
+        margin-bottom: 25px;
+      }
+
+      h4 {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: $fontFamilyOne;
+        transition: color 0.4s ease-in-out;
+      }
+
+      &:hover {
+        background-color: $themeColorOne;
+        h4 {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &-articles {
+    &-wrapper {
+      background-color: #edeef0;
+    }
+    &__item {
+      p {
+        font-size: 14px;
+        font-family: $fontFamilyTwo;
+        margin: 10px 0;
+      }
+      &__footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+          color: #a0a0a3;
+          font-family: $fontFamilyOne;
+          font-size: 14px;
+        }
+
+        a {
+          font-size: 14px;
+          text-transform: uppercase;
+          color: $themeColorOne;
+          font-family: $fontFamilyOne;
+        }
+      }
+    }
+    &-link {
+      display: inline-flex;
+      align-items: center;
+
+      img {
+        display: inline-block;
+        margin-left: 15px;
+        height: 25px;
+      }
+
+      font-size: 14px;
+      text-transform: uppercase;
+      font-family: $fontFamilyOne;
+    }
+  }
 }
 
 .teachers-slider {

@@ -40,7 +40,7 @@
     
         $meta_boxes[] = array(
             'id' => 'videos_metabox',
-            'title' => esc_html__( 'Мета-данные', 'brainworks' ),
+            'title' => esc_html__( 'Мета-дані', 'brainworks' ),
             'post_types' => array('videos'),
             'context' => 'advanced',
             'priority' => 'default',

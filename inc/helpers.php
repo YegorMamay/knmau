@@ -570,16 +570,35 @@ if ( ! function_exists( 'woocommerce_cart' ) ) {
 	}
 }
 
+if (!function_exists('generate_tax_query')) {
+    function generate_tax_query($id, $tax_name = 'faculties') {
+        $term = get_the_terms($id, $tax_name)[0];
+
+        if ($term && $term->term_id) {
+            return [
+                'taxonomy' => $tax_name,
+                'field' => 'term_id',
+                'terms' => $term->term_id,
+            ];
+        }
+
+        return [];
+    }
+}
+
 if (!function_exists('get_department_breadcrumbs')) {
-    function get_department_breadcrumbs($id) {
+    function get_department_breadcrumbs($id, $post_type = '') {
         if (!$id) return;
         $terms = get_the_terms($id, 'faculties')[0];
-        return implode('/', [
+        $path = [
             '<a href="/"><i class="fa fa-home"></i></a>',
             '<a href="/faculties">'.__('Факультети', 'brainworks').'</a>',
             '<a href="/faculties/'.$terms->slug.'">'.$terms->name.'</a>',
             '<span>'.get_the_title($id).'</span>'
-        ]);
+        ];
+        if ($post_type && $post_type === 'faculties') unset($path[2]);
+
+        return implode('/', $path);
     }
 }
 
@@ -591,5 +610,41 @@ if (!function_exists('get_social_icon')) {
         else if (strpos($url, 'instagram') !== false) $cl = 'fab fa-instagram';
 
         return sprintf('<i class="%s"></i>', $cl);
+    }
+}
+
+if (!function_exists('get_departments_by_faculty')) {
+    function get_departments_by_faculty($id) {
+        return get_posts([
+            'post_type' => 'departments',
+            'tax_query' => [
+                generate_tax_query($id)
+            ],
+            'posts_per_page' => 4
+        ]);
+    }
+}
+
+if (!function_exists('get_videos_by_faculty')) {
+    function get_videos_by_faculty($id) {
+        return get_posts([
+            'post_type' => 'videos',
+            'tax_query' => [
+                generate_tax_query($id)
+            ],
+            'posts_per_page' => 4
+        ]);
+    }
+}
+
+if (!function_exists('get_articles_by_faculty')) {
+    function get_articles_by_faculty($id) {
+        return get_posts([
+            'post_type' => 'post',
+            'tax_query' => [
+                generate_tax_query($id)
+            ],
+            'posts_per_page' => 4
+        ]);
     }
 }

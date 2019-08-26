@@ -1,6 +1,6 @@
 <?php
 
-    register_taxonomy("faculties", ["departments", "videos"], array(
+    register_taxonomy("faculties", ["departments", "videos", "faculties", "post"], array(
         'public'            =>  true,
         'hierarchical'      =>  true,
         'show_in_nav_menus' =>  true,
