@@ -134,20 +134,20 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-4">
                 <a href="#" class="other-content-item">
-    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/reward.svg">
+    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/announce.svg">
     	           <p>Оголошення</p>
     	        </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4">
                 <a href="#" class="other-content-item">
     	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/reward.svg">
-    	           <p>Оголошення</p>
+    	           <p>Нагороди НМАУіЧ</p>
     	        </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4">
                 <a href="#" class="other-content-item">
     	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/library.svg">
-    	           <p>Оголошення</p>
+    	           <p>Віртуальна бібліотека</p>
     	        </a>
             </div>
         </div>
