@@ -9,6 +9,7 @@
     <article id="post_<?php the_ID() ?>" <?php post_class() ?>>
         <div class="header">
             <h1 class="single-title"><?php the_title() ?></h1>
+            <div class="sp-xs-2"></div>
             <?php /*
             <h5>
                 <span class="text-muted author"><?php _e('By', 'brainworks'); echo " "; the_author() ?></span>
@@ -21,14 +22,16 @@
             */ ?>
         </div>
         <section>
-            <?php the_post_thumbnail('full'); ?>
+            <?php /*  the_post_thumbnail('full'); */ ?>
             <?php the_content() ?>
             <?php wp_link_pages(); ?>
         </section>
     </article>
-    <div class="sp-xs-2 sp-sm-2 sp-md-2 sp-lg-2 sp-xl-2"></div>
+    <div class="sp-xs-2"></div>
+    <time class="text-muted" datetime="<?php the_time('d-m-Y')?>"><?php the_date(get_option('date_format')); ?></time>
+    <div class="sp-xs-2"></div>
     <hr>
-    <div class="sp-xs-2 sp-sm-2 sp-md-2 sp-lg-2 sp-xl-2"></div>
+    <div class="sp-xs-2"></div>
     <?php comments_template('/loops/comments.php'); ?>
 <?php endwhile; ?>
 

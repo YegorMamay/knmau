@@ -45,39 +45,39 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <a href="#" class="shadow-hover">
-    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/piano-fac.svg">
-    	           <p>Фортепіанний факультет</p>
+                <a href="/faculties/fortepiannij-fakultet/" class="shadow-hover">
+    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/piano-fac.svg" alt="<?php _e('Фортепіанний факультет', 'brainworks') ?>">
+    	           <p><?php _e('Фортепіанний факультет', 'brainworks') ?></p>
     	       </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <a href="#" class="shadow-hover">
-    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/vocal-conductor-fac.svg">
-    	           <p>Вокальний та диригентський факультет</p>
+                <a href="/faculties/vokalnij-ta-dirigentskij-fakultet/" class="shadow-hover">
+    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/vocal-conductor-fac.svg" alt="<?php _e('Вокальний та диригентський факультет', 'brainworks') ?>">
+    	           <p><?php _e('Вокальний та диригентський факультет', 'brainworks') ?></p>
     	       </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <a href="#" class="shadow-hover">
-    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/orchestra-fac.svg">
-    	           <p>Оркестровий факультет</p>
+                <a href="/faculties/orkestrovij-fakultet/" class="shadow-hover">
+    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/orchestra-fac.svg" alt="<?php _e('Оркестровий факультет', 'brainworks') ?>">
+    	           <p><?php _e('Оркестровий факультет', 'brainworks') ?></p>
     	       </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <a href="#" class="shadow-hover">
-    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/folk-instruments-fac.svg">
-    	           <p>Факультет народних інструментів</p>
+                <a href="/faculties/fakultet-narodnih-instrumentiv/" class="shadow-hover">
+    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/folk-instruments-fac.svg" alt="<?php _e('Факультет народних інструментів', 'brainworks') ?>">
+    	           <p><?php _e('Факультет народних інструментів', 'brainworks') ?></p>
     	       </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <a href="#" class="shadow-hover">
-    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/composer-fac.svg">
-    	           <p>Факультет історико-теоретичний, композиторський та іноземних студентів</p>
+                <a href="faculties/fakultet-istoriko-teoretichnij-kompozitorskij-ta-inozemnih-studentiv/" class="shadow-hover">
+    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/composer-fac.svg" alt="<?php _e('Факультет історико-теоретичний, композиторський та іноземних студентів', 'brainworks') ?>">
+    	           <p><?php _e('Факультет історико-теоретичний, композиторський та іноземних студентів', 'brainworks') ?></p>
     	       </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <a href="#" class="shadow-hover">
-    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/interdepartmental-fac.svg">
-    	           <p>Оголошення</p>
+                <a href="/faculties/mizhfakultetski-kafedri/" class="shadow-hover">
+    	           <img src="/wp-content/themes/knmau/assets/img/svg-icons/interdepartmental-fac.svg" alt="<?php _e('Міжфакультетські кафедри', 'brainworks') ?>">
+    	           <p><?php _e('Міжфакультетські кафедри', 'brainworks') ?></p>
     	       </a>
             </div>
         </div>
@@ -98,27 +98,27 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-3">
-                <a href="#">
-                    <img src="https://knmau.brainworks.pro/wp-content/uploads/temp-img-16x10-735x459.jpg" alt="">
-                    <p>Гуртожиток</p>
+                <a href="/gurtozhitok/">
+                    <img src="https://knmau.brainworks.pro/wp-content/uploads/temp-img-16x10-735x459.jpg" alt="<?php _e('Гуртожиток', 'brainworks') ?>">
+                    <p><?php _e('Гуртожиток', 'brainworks') ?></p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3">
-                <a href="#">
-                    <img src="https://knmau.brainworks.pro/wp-content/uploads/temp-img-16x10-735x459.jpg" alt="">
-                    <p>Студентське життя</p>
+                <a href="/studentske-zhittya/">
+                    <img src="https://knmau.brainworks.pro/wp-content/uploads/temp-img-16x10-735x459.jpg" alt="<?php _e('Студентське життя', 'brainworks') ?>">
+                    <p><?php _e('Студентське життя', 'brainworks') ?></p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3">
-                <a href="#">
-                    <img src="https://knmau.brainworks.pro/wp-content/uploads/temp-img-16x10-735x459.jpg" alt="">
-                    <p>Віртуальний тур</p>
+                <a href="/virtualnij-tur/">
+                    <img src="https://knmau.brainworks.pro/wp-content/uploads/temp-img-16x10-735x459.jpg" alt="<?php _e('Віртуальний тур', 'brainworks') ?>">
+                    <p><?php _e('Віртуальний тур', 'brainworks') ?></p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3">
-                <a href="#">
-                    <img src="https://knmau.brainworks.pro/wp-content/uploads/temp-img-16x10-735x459.jpg" alt="">
-                    <p>Фотогалерея</p>
+                <a href="/galereya/">
+                    <img src="https://knmau.brainworks.pro/wp-content/uploads/temp-img-16x10-735x459.jpg" alt="<?php _e('Фотогалерея', 'brainworks') ?>">
+                    <p><?php _e('Фотогалерея', 'brainworks') ?></p>
                 </a>
             </div>
         </div>
