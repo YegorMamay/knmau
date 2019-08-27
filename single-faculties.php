@@ -68,14 +68,28 @@
             <div class="sp-xs-6"></div>
         </div>
     </div>
-    <div class="deparment-videos-wrapper">
+    <div class="department-videos-wrapper">
         <div class="container">
+            <div class="sp-xs-6"></div>
             <h2><?php _e('Відео факультету', 'brainworks'); ?></h2>
-            <div class="department-videos-list">
+            <div class="sp-xs-4"></div>
+            <div class="department-videos__list">
                 <?php foreach (get_videos_by_faculty(get_the_ID()) as $video) {
-                    
+                    ?>
+                <div class="department-videos__item">
+                <img src="https://img.youtube.com/vi/F0IbjVq-fgs/mqdefault.jpg" />
+                </div>
+                <?php
                 } ?>
             </div>
+            <div class="sp-xs-4"></div>
+            <div class="text-right">
+                <a href="/blog" class="department-articles-link department-articles-link--white">
+                    <?php _e('БІЛЬШЕ ВІДЕО', 'brainworks'); ?>
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/arrow-right-link-white.png" />
+                </a>
+            </div>
+            <div class="sp-xs-6"></div>
         </div>
     </div>
     <div class="container">

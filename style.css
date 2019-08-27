@@ -10021,6 +10021,14 @@ ol.commentlist .comment-body {
   color: #fff;
 }
 
+.department-videos-wrapper {
+  background-color: #1e2c4f;
+}
+
+.department-videos-wrapper h2 {
+  color: #fff;
+}
+
 .department-articles-wrapper {
   background-color: #edeef0;
 }
@@ -10070,6 +10078,10 @@ ol.commentlist .comment-body {
   font-size: 14px;
   text-transform: uppercase;
   font-family: "Futura";
+}
+
+.department-articles-link--white {
+  color: #fff;
 }
 
 .department-articles-link img {

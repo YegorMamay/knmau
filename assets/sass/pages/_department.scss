@@ -243,9 +243,18 @@
     }
   }
 
+  &-videos {
+    &-wrapper {
+      background-color: #1e2c4f;
+      h2 {
+        color: #fff;
+      }
+    }
+  }
+
   &-articles {
     &-wrapper {
-      background-color: #edeef0;
+      background-color: #edeef0; 
     }
     &__item {
       p {
@@ -276,6 +285,10 @@
     &-link {
       display: inline-flex;
       align-items: center;
+
+      &--white {
+        color: #fff;
+      }
 
       img {
         display: inline-block;
