@@ -589,16 +589,18 @@ if (!function_exists('generate_tax_query')) {
 if (!function_exists('get_department_breadcrumbs')) {
     function get_department_breadcrumbs($id, $post_type = '') {
         if (!$id) return;
-        $terms = get_the_terms($id, 'faculties')[0];
-        $path = [
-            '<a href="/"><i class="fa fa-home"></i></a>',
-            '<a href="/faculties">'.__('Факультети', 'brainworks').'</a>',
-            '<a href="/faculties/'.$terms->slug.'">'.$terms->name.'</a>',
-            '<span>'.get_the_title($id).'</span>'
-        ];
-        if ($post_type && $post_type === 'faculties') unset($path[2]);
-
-        return implode('/', $path);
+        $terms = get_the_terms($id, 'faculties');
+        if ($terms) {
+            $terms = $terms[0];
+            $path = [
+                '<a href="/"><i class="fa fa-home"></i></a>',
+                '<a href="/faculties">'.__('Факультети', 'brainworks').'</a>',
+                '<a href="/faculties/'.$terms->slug.'">'.$terms->name.'</a>',
+                '<span>'.get_the_title($id).'</span>'
+            ];
+            if ($post_type && $post_type === 'faculties') unset($path[2]);
+            return implode('/', $path);
+        }
     }
 }
 
@@ -646,5 +648,15 @@ if (!function_exists('get_articles_by_faculty')) {
             ],
             'posts_per_page' => 4
         ]);
+    }
+}
+
+if (!function_exists('get_term_slug')) {
+    function get_term_slug($post_id, $taxonomy) {
+        $terms = get_the_terms($post_id, $taxonomy);
+        if ($terms && sizeof($terms) > 0 && $terms[0]->slug) {
+            return $terms[0]->slug;
+        }
+        return '';
     }
 }

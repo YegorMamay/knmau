@@ -51,7 +51,7 @@
                         endforeach;?>
                     </div>
                     <div class="sp-xs-5"></div>
-                    <h3 class="text-center">Творчі завдання на вступному випробуванні:</h3>
+                    <h3 class="text-center"><?php _e('Творчі завдання на вступному випробуванні:', 'brainworks'); ?></h3>
                     <div class="sp-xs-4"></div>
                     <div class="department-subjects">
                         <?php foreach ((get_post_meta(get_the_ID(), 'tasks', true)) as $subject):

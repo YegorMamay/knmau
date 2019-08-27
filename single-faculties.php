@@ -24,6 +24,20 @@
                 <i class="fal fa-graduation-cap"></i>
                 <h4><?php echo $department->post_title; ?></h4>
             </a>
+            <a href="<?php echo get_the_permalink($department->ID) ?>" class="department-list__item">
+                <i class="fal fa-graduation-cap"></i>
+                <h4><?php echo $department->post_title; ?></h4>
+            </a>
+            
+            <a href="<?php echo get_the_permalink($department->ID) ?>" class="department-list__item">
+                <i class="fal fa-graduation-cap"></i>
+                <h4><?php echo $department->post_title; ?></h4>
+            </a>
+            
+            <a href="<?php echo get_the_permalink($department->ID) ?>" class="department-list__item">
+                <i class="fal fa-graduation-cap"></i>
+                <h4><?php echo $department->post_title; ?></h4>
+            </a>
             <?php 
                 }
             ?>
@@ -60,8 +74,8 @@
             </div>
             <div class="sp-xs-4"></div>
             <div class="text-right">
-                <a href="/blog" class="department-articles-link ">
-                    <?php _e('УСІ НОВИНИ', 'brainworks'); ?>
+                <a href="/category/<?php echo get_term_slug(get_the_ID(), 'faculties'); ?>" class="department-articles-link ">
+                    <?php _e('УСІ НОВИНИ', 'brainworks'); ?> 
                     <img src="<?php echo get_template_directory_uri() ?>/assets/img/arrow-right-link.png" />
                 </a>
             </div>

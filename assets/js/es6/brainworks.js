@@ -17,7 +17,6 @@
 
         html.removeClass('no-js').addClass('js');
 
-        scrollToElement();
         sidebarAccordion();
         reviews('.js-reviews');
         scrollTop('.js-scroll-top');
@@ -391,35 +390,6 @@
         window.setTimeout(() => {
             body.removeChild(div);
         }, 0);
-    };
-
-
-    /**
-     * Function to add scroll handler for all links with hash as first symbol of href
-     *
-     * @param {number} [animationSpeed=400] speed of animation
-     * @returns {void}
-     */
-    const scrollToElement = (animationSpeed = 400) => {
-        const links = $('a');
-
-        links.each((index, element) => {
-            const $element = $(element), href = $element.attr('href');
-
-            if (href[0] === '#') {
-                $element.on('click', (e) => {
-                    e.preventDefault();
-
-                    const el = $(href);
-
-                    if (el.length) {
-                        $('html, body').animate({
-                            scrollTop: $(href).offset().top
-                        }, animationSpeed);
-                    }
-                });
-            }
-        });
     };
 
     /**

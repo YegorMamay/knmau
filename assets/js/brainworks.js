@@ -12,7 +12,6 @@
             html.addClass("is-mobile");
         }
         html.removeClass("no-js").addClass("js");
-        scrollToElement();
         sidebarAccordion();
         reviews(".js-reviews");
         scrollTop(".js-scroll-top");
@@ -177,24 +176,6 @@
         window.setTimeout(function() {
             body.removeChild(div);
         }, 0);
-    };
-    var scrollToElement = function scrollToElement() {
-        var animationSpeed = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 400;
-        var links = $("a");
-        links.each(function(index, element) {
-            var $element = $(element), href = $element.attr("href");
-            if (href[0] === "#") {
-                $element.on("click", function(e) {
-                    e.preventDefault();
-                    var el = $(href);
-                    if (el.length) {
-                        $("html, body").animate({
-                            scrollTop: $(href).offset().top
-                        }, animationSpeed);
-                    }
-                });
-            }
-        });
     };
     var sidebarAccordion = function sidebarAccordion() {
         var sidebarMenu = $(".sidebar .widget_nav_menu");
