@@ -99,25 +99,25 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-3">
                 <a href="/gurtozhitok/">
-                    <img src="https://knmau.brainworks.pro/wp-content/uploads/temp-img-16x10-735x459.jpg" alt="<?php _e('Гуртожиток', 'brainworks') ?>">
+                    <img src="/wp-content/uploads/gurt.jpg" alt="<?php _e('Гуртожиток', 'brainworks') ?>">
                     <p><?php _e('Гуртожиток', 'brainworks') ?></p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3">
                 <a href="/studentske-zhittya/">
-                    <img src="https://knmau.brainworks.pro/wp-content/uploads/temp-img-16x10-735x459.jpg" alt="<?php _e('Студентське життя', 'brainworks') ?>">
+                    <img src="/wp-content/uploads/student-life.jpg" alt="<?php _e('Студентське життя', 'brainworks') ?>">
                     <p><?php _e('Студентське життя', 'brainworks') ?></p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3">
                 <a href="/virtualnij-tur/">
-                    <img src="https://knmau.brainworks.pro/wp-content/uploads/temp-img-16x10-735x459.jpg" alt="<?php _e('Віртуальний тур', 'brainworks') ?>">
+                    <img src="/wp-content/uploads/virtual-tour.jpg" alt="<?php _e('Віртуальний тур', 'brainworks') ?>">
                     <p><?php _e('Віртуальний тур', 'brainworks') ?></p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3">
                 <a href="/galereya/">
-                    <img src="https://knmau.brainworks.pro/wp-content/uploads/temp-img-16x10-735x459.jpg" alt="<?php _e('Фотогалерея', 'brainworks') ?>">
+                    <img src="/wp-content/uploads/gallery.jpg" alt="<?php _e('Фотогалерея', 'brainworks') ?>">
                     <p><?php _e('Фотогалерея', 'brainworks') ?></p>
                 </a>
             </div>
