@@ -98,9 +98,9 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-3">
-                <a href="/gurtozhitok/">
+                <a href="/erazmus/">
                     <img src="/wp-content/uploads/gurt.jpg" alt="<?php _e('Гуртожиток', 'brainworks') ?>">
-                    <p><?php _e('Гуртожиток', 'brainworks') ?></p>
+                    <p><?php _e('Еразмус+', 'brainworks') ?></p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3">
