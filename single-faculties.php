@@ -24,20 +24,6 @@
                 <i class="fal fa-graduation-cap"></i>
                 <h4><?php echo $department->post_title; ?></h4>
             </a>
-            <a href="<?php echo get_the_permalink($department->ID) ?>" class="department-list__item">
-                <i class="fal fa-graduation-cap"></i>
-                <h4><?php echo $department->post_title; ?></h4>
-            </a>
-            
-            <a href="<?php echo get_the_permalink($department->ID) ?>" class="department-list__item">
-                <i class="fal fa-graduation-cap"></i>
-                <h4><?php echo $department->post_title; ?></h4>
-            </a>
-            
-            <a href="<?php echo get_the_permalink($department->ID) ?>" class="department-list__item">
-                <i class="fal fa-graduation-cap"></i>
-                <h4><?php echo $department->post_title; ?></h4>
-            </a>
             <?php 
                 }
             ?>
@@ -74,8 +60,9 @@
             </div>
             <div class="sp-xs-4"></div>
             <div class="text-right">
-                <a href="/category/<?php echo get_term_slug(get_the_ID(), 'faculties'); ?>" class="department-articles-link ">
-                    <?php _e('УСІ НОВИНИ', 'brainworks'); ?> 
+                <a href="/category/<?php echo get_term_slug(get_the_ID(), 'faculties'); ?>"
+                    class="department-articles-link ">
+                    <?php _e('УСІ НОВИНИ', 'brainworks'); ?>
                     <img src="<?php echo get_template_directory_uri() ?>/assets/img/arrow-right-link.png" />
                 </a>
             </div>
@@ -87,11 +74,18 @@
             <div class="sp-xs-6"></div>
             <h2><?php _e('Відео факультету', 'brainworks'); ?></h2>
             <div class="sp-xs-4"></div>
-            <div class="department-videos__list">
+            <div class="department-videos__list row">
                 <?php foreach (get_videos_by_faculty(get_the_ID()) as $video) {
+                        $url = get_post_meta($video->ID, 'url', true);
+                        $id = get_param_from_url($url, 'v');
                     ?>
-                <div class="department-videos__item">
-                <img src="https://img.youtube.com/vi/F0IbjVq-fgs/mqdefault.jpg" />
+                <div class="col-md-4 col-xs-12">
+                    <a class="department-videos__item" href="<?php echo $url ?>" target="_blank">
+                        <img src="https://img.youtube.com/vi/<?php echo $id; ?>/mqdefault.jpg" />
+                        <div class="department-videos__item__mask">
+                            <i class="far fa-play-circle"></i>
+                        </div>
+                    </a>
                 </div>
                 <?php
                 } ?>
@@ -108,6 +102,22 @@
     </div>
     <div class="container">
         <div class="department-content-wrapper">
+            <h3 class="text-center"><?php _e('Деканат', 'brainworks') ?></h3>
+            <div class="sp-xs-3"></div>
+            <div class="divider"></div>
+            <div class="sp-xs-6"></div>
+            <div class="row">
+                <?php foreach (get_teachers_by_faculty(get_the_ID()) as $teacher) { ?>
+                    <div class="col-md-3">
+                        <div class="department-teacher">
+                            <img src="<?php echo get_the_post_thumbnail_url($teacher->ID) ?>" alt="" title="<?php echo $teacher->post_title; ?>" />
+                            <strong class="department-teacher__position"><?php echo get_post_meta($teacher->ID, 'position_f', true); ?></strong>
+                            <h4><?php echo $teacher->post_title; ?></h4>
+                            <p><?php echo get_post_meta($teacher->ID, 'info_f', true); ?></p>
+                        </div>
+                    </div>
+                <?php } ?>
+            </div>
             <h3 class="text-center"><?php _e('Контакти деканату', 'brainworks'); ?></h3>
             <div class="sp-xs-4"></div>
             <div class="department-contacts">

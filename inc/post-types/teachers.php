@@ -40,7 +40,7 @@
     
         $meta_boxes[] = array(
             'id' => 'teachers_metabox',
-            'title' => esc_html__( 'Мета-данные', 'brainworks' ),
+            'title' => esc_html__( 'Дані про викладача (Кафедра)', 'brainworks' ),
             'post_types' => array('teachers'),
             'context' => 'advanced',
             'priority' => 'default',
@@ -48,17 +48,44 @@
             'fields' => array(
                 array(
                     'id' => $prefix . 'info',
-                    'name' => esc_html__( 'Регалии', 'brainworks' ),
+                    'name' => esc_html__( 'Регалії', 'brainworks' ),
                     'type' => 'textarea',
                 ),
                 array(
                     'id' => $prefix . 'priority',
                     'type' => 'number',
-                    'name' => esc_html__( 'Приоритет', 'brainworks' ),
+                    'name' => esc_html__( 'Пріорітет', 'brainworks' ),
                 ),
             ),
         );
-    
+
+        $meta_boxes[] = array(
+            'id' => 'teachers_metabox_f',
+            'title' => esc_html__( 'Дані про викладача (Факультет)', 'brainworks' ),
+            'post_types' => array('teachers'),
+            'context' => 'advanced',
+            'priority' => 'default',
+            'autosave' => 'false',
+            'fields' => array(
+                array(
+                    'id' => $prefix . 'position_f',
+                    'name' => esc_html__( 'Посада', 'brainworks' ),
+                    'type' => 'textarea',
+                ),
+                array(
+                    'id' => $prefix . 'info_f',
+                    'name' => esc_html__( 'Відзнаки', 'brainworks' ),
+                    'type' => 'textarea',
+                ),
+                array(
+                    'id' => $prefix . 'priority_f',
+                    'type' => 'number',
+                    'name' => esc_html__( 'Пріорітет', 'brainworks' ),
+                ),
+            ),
+        );
+        
+
         return $meta_boxes;
     }
     add_filter( 'rwmb_meta_boxes', 'register_teachers_metabox' );

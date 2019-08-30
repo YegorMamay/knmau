@@ -622,7 +622,7 @@ if (!function_exists('get_departments_by_faculty')) {
             'tax_query' => [
                 generate_tax_query($id)
             ],
-            'posts_per_page' => 4
+            'numberposts' => 4
         ]);
     }
 }
@@ -634,7 +634,8 @@ if (!function_exists('get_videos_by_faculty')) {
             'tax_query' => [
                 generate_tax_query($id)
             ],
-            'posts_per_page' => 4
+            'posts_per_page' => 4,
+            'numberposts' => 4
         ]);
     }
 }
@@ -646,7 +647,8 @@ if (!function_exists('get_articles_by_faculty')) {
             'tax_query' => [
                 generate_tax_query($id)
             ],
-            'posts_per_page' => 4
+            'posts_per_page' => 4,
+            'numberposts' => 4
         ]);
     }
 }
@@ -658,5 +660,36 @@ if (!function_exists('get_term_slug')) {
             return $terms[0]->slug;
         }
         return '';
+    }
+}
+
+if (!function_exists('get_param_from_url')) {
+    function get_param_from_url($url, $param_name = '') {
+        if (!$url || !$param_name) return NULL;
+        $params = [];
+        parse_str( parse_url( $url, PHP_URL_QUERY ), $params );
+        if (isset($params[$param_name])) {
+            return $params[$param_name];
+        }
+        return NULL;
+    }
+}
+
+if (!function_exists('get_teachers_by_faculty')) {
+    function get_teachers_by_faculty($id) {
+        $term = get_the_terms($id, 'faculties');
+        if ($term) {
+            $term = $term[0];
+            if ($term->term_id) {
+                $teachers = get_posts([
+                    'numberposts' => 4,
+                    'post_type' => 'teachers',
+                    'tax_query' => [generate_tax_query($id)]
+                ]);
+                return $teachers;
+            }
+            return [];
+        }
+        return [];
     }
 }
