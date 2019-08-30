@@ -10,7 +10,7 @@
 <div class="sp-xs-6"></div>
 
 <div class="main-news container">
-    <h2><?php _e('Головні новини НМАУіЧ', 'brainworks') ?></h2>
+    <h2><?php _e('Головні новини НМАУ', 'brainworks') ?></h2>
     <div class="sp-xs-3"></div>
 
     <?php echo do_shortcode('[bw-advert category=32]'); ?>
@@ -24,13 +24,13 @@
 <div class="sp-xs-6"></div>
 </div>
 
-<div class="concerts">
+<!--<div class="concerts">
     <div class="sp-xs-6"></div>
 
 
 
     <div class="sp-xs-6"></div>
-</div>
+</div>-->
 
 <div class="sp-xs-6"></div>
 
@@ -89,7 +89,7 @@
 <div class="more-about dark-bg">
     <div class="sp-xs-6"></div>
 
-    <h2 class="text-center"><?php _e('Більше про НМАУіЧ', 'brainworks') ?></h2>
+    <h2 class="text-center"><?php _e('Більше про НМАУ', 'brainworks') ?></h2>
 
     <div class="sp-xs-3"></div>
     <div class="divider"></div>
@@ -98,15 +98,15 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-3">
-                <a href="/gurtozhitok/">
+                <a href="/erazmus/">
                     <img src="/wp-content/uploads/gurt.jpg" alt="<?php _e('Гуртожиток', 'brainworks') ?>">
-                    <p><?php _e('Гуртожиток', 'brainworks') ?></p>
+                    <p><?php _e('Еразмус+', 'brainworks') ?></p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3">
                 <a href="/studentske-zhittya/">
                     <img src="/wp-content/uploads/student-life.jpg" alt="<?php _e('Студентське життя', 'brainworks') ?>">
-                    <p><?php _e('Студентське життя', 'brainworks') ?></p>
+                    <p><?php _e('Студентська рада', 'brainworks') ?></p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3">
