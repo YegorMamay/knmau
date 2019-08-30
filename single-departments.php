@@ -51,7 +51,7 @@
                         endforeach;?>
                     </div>
                     <div class="sp-xs-5"></div>
-                    <h3 class="text-center"><?php _e('Творчі завдання на вступному випробуванні:', 'brainworks'); ?></h3>
+                    <h3 class="text-center"><?php echo get_post_meta(get_the_ID(), 'subjects_subtitle', true); ?></h3>
                     <div class="sp-xs-2"></div>
                     <div class="text-center">
                         <?php $file = get_post_meta(get_the_ID(), 'file', true); if ($file): ?>

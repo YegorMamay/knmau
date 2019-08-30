@@ -10605,7 +10605,8 @@ a:hover, a:active, a:focus {
   color: #333333;
 }
 
-.pagination {
+.pagination,
+ul.page-numbers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10621,23 +10622,56 @@ a:hover, a:active, a:focus {
   margin: 10px auto;
 }
 
-.pagination .page-item {
+.pagination .page-item,
+.pagination li,
+ul.page-numbers .page-item,
+ul.page-numbers li {
   display: inline-block;
 }
 
 .pagination .page-item:first-child .page-link,
-.pagination .page-item:first-child .current {
+.pagination .page-item:first-child .current,
+.pagination .page-item:first-child a.page-numbers,
+.pagination li:first-child .page-link,
+.pagination li:first-child .current,
+.pagination li:first-child a.page-numbers,
+ul.page-numbers .page-item:first-child .page-link,
+ul.page-numbers .page-item:first-child .current,
+ul.page-numbers .page-item:first-child a.page-numbers,
+ul.page-numbers li:first-child .page-link,
+ul.page-numbers li:first-child .current,
+ul.page-numbers li:first-child a.page-numbers {
   border-radius: 3px 0 0 3px;
   border-left: 1px solid silver;
 }
 
 .pagination .page-item:last-child .page-link,
-.pagination .page-item:last-child .current {
+.pagination .page-item:last-child .current,
+.pagination .page-item:last-child a.page-numbers,
+.pagination li:last-child .page-link,
+.pagination li:last-child .current,
+.pagination li:last-child a.page-numbers,
+ul.page-numbers .page-item:last-child .page-link,
+ul.page-numbers .page-item:last-child .current,
+ul.page-numbers .page-item:last-child a.page-numbers,
+ul.page-numbers li:last-child .page-link,
+ul.page-numbers li:last-child .current,
+ul.page-numbers li:last-child a.page-numbers {
   border-radius: 0 3px 3px 0;
 }
 
 .pagination .page-item .page-link,
-.pagination .page-item .current {
+.pagination .page-item .current,
+.pagination .page-item a.page-numbers,
+.pagination li .page-link,
+.pagination li .current,
+.pagination li a.page-numbers,
+ul.page-numbers .page-item .page-link,
+ul.page-numbers .page-item .current,
+ul.page-numbers .page-item a.page-numbers,
+ul.page-numbers li .page-link,
+ul.page-numbers li .current,
+ul.page-numbers li a.page-numbers {
   display: inline-block;
   padding: 10px 15px;
   font-size: 16px;
@@ -10649,13 +10683,27 @@ a:hover, a:active, a:focus {
   border-right: 1px solid silver;
 }
 
-.pagination .page-item .page-link:hover {
+.pagination .page-item .page-link:hover,
+.pagination .page-item a.page-numbers:hover,
+.pagination li .page-link:hover,
+.pagination li a.page-numbers:hover,
+ul.page-numbers .page-item .page-link:hover,
+ul.page-numbers .page-item a.page-numbers:hover,
+ul.page-numbers li .page-link:hover,
+ul.page-numbers li a.page-numbers:hover {
   background-color: #a63031;
   color: #fff;
   border-color: transparent;
 }
 
-.pagination .page-item .current {
+.pagination .page-item .current,
+.pagination .page-item a.page-numbers.current,
+.pagination li .current,
+.pagination li a.page-numbers.current,
+ul.page-numbers .page-item .current,
+ul.page-numbers .page-item a.page-numbers.current,
+ul.page-numbers li .current,
+ul.page-numbers li a.page-numbers.current {
   color: #fff;
   background-color: #a63031;
   border-color: transparent;

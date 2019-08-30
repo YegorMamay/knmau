@@ -99,6 +99,11 @@
                         'clone' => 'true',
                     ),
                     array(
+                        'id' => $prefix . 'subjects_subtitle',
+                        'type' => 'text',
+                        'name' => esc_html__( 'Заголовок секції', 'metabox-online-generator' ),
+                    ),
+                    array(
                         'id' => $prefix . 'file',
                         'type' => 'file_advanced',
                         'name' => esc_html__( 'Файл для завантаження', 'metabox-online-generator' ),
