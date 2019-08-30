@@ -33,3 +33,53 @@
     }
 
     add_action('init', 'bw_register_cpts_faculties');
+
+    if (!function_exists('faculties_metabox')) {
+        function faculties_metabox( $meta_boxes ) {
+            $prefix = '';
+            $meta_boxes[] = array(
+                'id' => 'departments_metabox',
+                'title' => esc_html__( 'Мета-дані', 'metabox-online-generator' ),
+                'post_types' => array('faculties'),
+                'context' => 'advanced',
+                'priority' => 'default',
+                'autosave' => 'false',
+                'fields' => array(
+                    array(
+                        'id' => $prefix . 'address',
+                        'type' => 'fieldset_text',
+                        'name' => esc_html__( 'Адреса', 'metabox-online-generator' ),
+                        'rows' => 2,
+                        'options' => array(
+                            'м. Київ' => esc_html__( 'Адреса', 'metabox-online-generator' ),
+                        ),
+                        'clone' => 'true',
+                    ),
+                    array(
+                        'id' => $prefix . 'phones',
+                        'type' => 'fieldset_text',
+                        'name' => esc_html__( 'Номера телефонів', 'metabox-online-generator' ),
+                        'rows' => 2,
+                        'options' => array(
+                            '+38 (098) 222-333-11' => esc_html__( 'Номер', 'metabox-online-generator' ),
+                        ),
+                        'clone' => 'true',
+                    ),
+                    array(
+                        'id' => $prefix . 'socials',
+                        'type' => 'fieldset_text',
+                        'name' => esc_html__( 'Соціальні мережі', 'metabox-online-generator' ),
+                        'rows' => 2,
+                        'options' => array(
+                            'https://facebook.com/' => esc_html__( 'Соц. мережа', 'metabox-online-generator' ),
+                        ),
+                        'clone' => 'true',
+                    ),
+                ),
+            );
+        
+            return $meta_boxes;
+        }
+        add_filter( 'rwmb_meta_boxes', 'faculties_metabox' );
+    }
+    

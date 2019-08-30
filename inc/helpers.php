@@ -693,3 +693,24 @@ if (!function_exists('get_teachers_by_faculty')) {
         return [];
     }
 }
+
+if (!function_exists('get_video')) {
+    function get_video($id = '') {
+        $params = [
+            'post_type' => 'videos',
+            'numberposts' => 1,
+            'posts_per_page' => 1
+        ];
+        if ($id) {
+            $params['tax_query'] = [generate_tax_query($id)];
+        }
+        return get_posts($params);
+    }
+}
+
+if (!function_exists('meta_check')) {
+    function meta_check($value) {
+        if (!$value) return [];
+        return $value;
+    }
+}

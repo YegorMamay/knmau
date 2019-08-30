@@ -43,9 +43,9 @@
                     <div class="department-articles__item">
                         <img src="<?php echo get_the_post_thumbnail_url($article->ID, 'medium'); ?>" alt=""
                             title="<?php echo $article->post_title; ?>" />
-                        <p>
-                            <?php echo $article->post_excerpt; ?>
-                        </p>
+                        <h4>
+                            <?php echo $article->post_title; ?>
+                        </h4>
                         <div class="department-articles__item__footer">
                             <span><?php echo date('d / m', strtotime($article->post_date)) ?></span>
                             <a href="<?php echo get_the_permalink($article->ID) ?>">
@@ -74,6 +74,7 @@
             <div class="sp-xs-6"></div>
             <h2><?php _e('Відео факультету', 'brainworks'); ?></h2>
             <div class="sp-xs-4"></div>
+            <?php $video = get_video(get_the_ID()); ?>
             <div class="department-videos__list row">
                 <?php foreach (get_videos_by_faculty(get_the_ID()) as $video) {
                         $url = get_post_meta($video->ID, 'url', true);
@@ -121,15 +122,15 @@
             <h3 class="text-center"><?php _e('Контакти деканату', 'brainworks'); ?></h3>
             <div class="sp-xs-4"></div>
             <div class="department-contacts">
-                <!-- <div>
+                <div>
                     <strong><?php _e('АДРЕСА', 'brainworks'); ?></strong>
-                    <?php foreach ((get_post_meta(get_the_ID(), 'address', true)) as $subject):
+                    <?php foreach (meta_check((get_post_meta(get_the_ID(), 'address', true))) as $subject):
                         echo '<span>'. array_shift($subject) .'</span>';
                     endforeach;?>
                 </div>
                 <div>
                     <strong><?php _e('ТЕЛЕФОН, ФАКС', 'brainworks'); ?></strong>
-                    <?php foreach ((get_post_meta(get_the_ID(), 'phones', true)) as $subject):
+                    <?php foreach (meta_check(get_post_meta(get_the_ID(), 'phones', true)) as $subject):
                         $v = array_shift($subject);
                         echo '<a href="tel:'. get_phone_number($v) .'">'. $v .'</span>';
                     endforeach;?>
@@ -137,12 +138,12 @@
                 <div>
                     <strong><?php _e('СОЦМЕРЕЖІ', 'brainworks'); ?></strong>
                     <ul>
-                        <?php foreach ((get_post_meta(get_the_ID(), 'socials', true)) as $subject):
+                        <?php foreach (meta_check(get_post_meta(get_the_ID(), 'socials', true)) as $subject):
                             $v = array_shift($subject);
                             echo '<li><a href="'.$v.'" target="_blank">'.get_social_icon($v).'</a></li>';
                         endforeach;?>
                     </ul>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
