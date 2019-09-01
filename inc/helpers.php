@@ -684,7 +684,10 @@ if (!function_exists('get_teachers_by_faculty')) {
                 $teachers = get_posts([
                     'numberposts' => 4,
                     'post_type' => 'teachers',
-                    'tax_query' => [generate_tax_query($id)]
+                    'tax_query' => [generate_tax_query($id)],
+                    'meta_key' => 'priority_f',
+                    'orderby' => 'meta_value',
+                    'order' => 'ASC'
                 ]);
                 return $teachers;
             }

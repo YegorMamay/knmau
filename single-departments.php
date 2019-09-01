@@ -32,7 +32,7 @@
     </div>
     <div class="department-slider-wrapper">
         <div class="container">
-            <h2><?php _e('Науково-педагогічний склад кафедри', 'brainworks'); ?></h2>
+            <h2 class="text-center"><?php _e('Науково-педагогічний склад кафедри', 'brainworks'); ?></h2>
             <?php echo do_shortcode('[bw-teachers-slider department='.get_the_ID().']'); ?>
         </div>
     </div>

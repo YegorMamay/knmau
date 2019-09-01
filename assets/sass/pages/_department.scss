@@ -205,6 +205,36 @@
     }
   }
 
+  &-teacher {
+    text-align: center;
+
+    img {
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+
+    strong {
+      font-size: 14px;
+      text-transform: uppercase;
+      font-family: $fontFamilyOne;
+    }
+
+    h4 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+      padding: 0px;
+      margin-bottom: 10px;
+      color: #000;
+      line-height: 21px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #a0a0a3;
+    }
+  }
+
   &-list {
     display: flex;
     flex-direction: row;
@@ -373,6 +403,7 @@
 .video-block {
   &__thumbnail {
     position: relative;
+    display: block;
     img:not(.video-image__inner) {
       position: absolute;
       top: 50%;

@@ -79,13 +79,13 @@
                 $id = get_param_from_url($url, 'v'); ?>
             <div class="row video-block">
                 <div class="col-md-6 col-sm-12">
-                    <div class="video-block__thumbnail">
+                    <a href="<?php echo $url; ?>" target="_blank" class="video-block__thumbnail">
                         <img src="https://img.youtube.com/vi/<?php echo $id; ?>/mqdefault.jpg"
                             alt="<?php _e("Дивитися відео", "brainworks"); ?>" title="<?php echo $video->post_title; ?>"
                             width="100%" class="video-image__inner" />
                         <img src="<?php echo get_template_directory_uri() ?>/assets/img/play-video.png" alt="Play" />
                         <div class="overlay"></div>
-                    </div>
+                    </a>
                     <div class="sp-xs-2"></div>
                 </div>
                 <div class="col-md-6 col-sm-12 video-block__content">

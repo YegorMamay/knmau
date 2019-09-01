@@ -63,202 +63,209 @@ Tags: one-column, two-columns, full-width-template, e-commerce
 @import "blocks/footer";
 
 ::selection {
-    text-shadow: none;
-    color: $selectionFontColor;
-    background-color: $selectionBgColor;
+  text-shadow: none;
+  color: $selectionFontColor;
+  background-color: $selectionBgColor;
 }
 
 html {
-    box-sizing: border-box;
-    overflow-x: hidden;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 * {
-    @if ($debug) {
-        outline: 1px solid red !important;
-    }
+  @if ($debug) {
+    outline: 1px solid red !important;
+  }
 
-    &,
-    &::before,
-    &::after {
-        box-sizing: inherit;
-    }
+  &,
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
 }
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    margin: 0;
-    min-width: 320px;
-    position: relative;
-    color: $bodyFontColor;
-    font: 400 16px/1.5 $fontFamilyTwo;
-    background-color: $bodyBgColor;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  min-width: 320px;
+  position: relative;
+  color: $bodyFontColor;
+  font: 400 16px/1.5 $fontFamilyTwo;
+  background-color: $bodyBgColor;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .wrapper {
-    position: relative;
-    overflow-x: hidden;
-    min-height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100%;
 
-    @media #{$mobile} {
-        padding-top: 70px;
-    }
+  @media #{$mobile} {
+    padding-top: 70px;
+  }
 }
 
 b,
 strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 img {
-    display: inline-block;
-    vertical-align: middle;
-    max-width: 100%;
-    height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
 }
 
 :focus {
-    outline: 0;
+  outline: 0;
 }
 
 .svg-icon {
-    max-width: 100%;
-    display: inline-block;
-    vertical-align: middle;
-    @extend %smooth_animation;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  @extend %smooth_animation;
 }
 
 .kama_breadcrumbs {
-    padding: 10px 0;
-    font-size: 14px;
-    margin-bottom: 10px;
+  padding: 10px 0;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .page-name {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .page-404 {
-    width: 90%;
-    max-width: 1170px;
-    margin: 0 auto;
-    height: 90vh;
-    background: image-url('404.png') no-repeat center center;
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+  height: 90vh;
+  background: image-url("404.png") no-repeat center center;
 
-    .contain {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  .contain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-        @media #{$mobile} {
-            display: block;
+    @media #{$mobile} {
+      display: block;
 
-            div {
-                margin-bottom: 20px;
-            }
-        }
-
-        @media #{$tablet} {
-            display: block;
-
-            div {
-                margin-bottom: 20px;
-            }
-        }
+      div {
+        margin-bottom: 20px;
+      }
     }
 
-    @media (max-width: 768px) {
-        background-image: none;
+    @media #{$tablet} {
+      display: block;
+
+      div {
+        margin-bottom: 20px;
+      }
     }
+  }
+
+  @media (max-width: 768px) {
+    background-image: none;
+  }
 }
 
 .divider {
-    display: block;
-    margin: 0 auto;
-    background-color: $themeColorTwo;
-    height: 1px;
-    width: 100px;
+  display: block;
+  margin: 0 auto;
+  background-color: $themeColorTwo;
+  height: 1px;
+  width: 100px;
 }
 
 .shadow-hover {
-    padding: 15px;
-    display: block;
+  padding: 15px;
+  display: block;
 
-    &:hover {
-        box-shadow: 0 0 7px 3px $themeColorThree;
-    }
+  &:hover {
+    box-shadow: 0 0 7px 3px $themeColorThree;
+  }
 }
 
 .dark-bg {
-    background-color: $themeColorOne;
+  background-color: $themeColorOne;
 }
 
 /* HOME PAGE */
 
 .concerts {
-    background-color: $themeColorThree;
+  background-color: $themeColorThree;
 }
-
 
 /* faculties */
 .faculties {
-    img {
-        width: 125px;
-        margin: 0 auto 25px auto;
-        display: block;
-    }
+  img {
+    width: 125px;
+    margin: 0 auto 25px auto;
+    display: block;
+  }
 
-    p {
-        text-align: center;
-    }
+  p {
+    font-size: 16px;
+    text-align: center;
+  }
 }
 
 .more-about {
-    h2 {
-        color: white;
-    }
+  h2 {
+    color: white;
+  }
+
+  img {
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: white;
+    font-family: $fontFamilyOne;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.other-content {
+  &-item {
+    display: block;
+    padding: 50px;
+    box-shadow: 0 0 7px 3px $themeColorThree;
+    min-height: 233px;
+    height: auto;
 
     img {
-        margin-bottom: 20px;
+      width: 80px;
+      margin: 0 auto 20px auto;
+      display: block;
     }
 
     p {
-        color: white;
-        font-family: $fontFamilyOne;
-        text-align: center;
-        text-transform: uppercase;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $fontFamilyOne;
     }
+  }
 }
 
+header {
+  h3 {
+    line-height: 36px;
+  }
+}
 
-.other-content {
-    &-item {
-        display: block;
-        padding: 50px;
-        box-shadow: 0 0 7px 3px $themeColorThree;
-        min-height: 233px;
-        height: auto;
-
-        img {
-            width: 80px;
-            margin: 0 auto 20px auto;
-            display: block;
-        }
-
-        p {
-            text-align: center;
-            text-transform: uppercase;
-            font-family: $fontFamilyOne;
-        }
-
-    }
-
+.front-news-headline {
+  line-height: 36px;
 }

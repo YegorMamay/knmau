@@ -9973,6 +9973,36 @@ ol.commentlist .comment-body {
   border-right: 0px;
 }
 
+.department-teacher {
+  text-align: center;
+}
+
+.department-teacher img {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.department-teacher strong {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Futura";
+}
+
+.department-teacher h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 0px;
+  margin-bottom: 10px;
+  color: #000;
+  line-height: 21px;
+}
+
+.department-teacher p {
+  font-size: 16px;
+  color: #a0a0a3;
+}
+
 .department-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10172,6 +10202,7 @@ ol.commentlist .comment-body {
 
 .video-block__thumbnail {
   position: relative;
+  display: block;
 }
 
 .video-block__thumbnail img:not(.video-image__inner) {
@@ -11875,6 +11906,7 @@ img {
 }
 
 .faculties p {
+  font-size: 16px;
   text-align: center;
 }
 
@@ -11912,4 +11944,12 @@ img {
   text-align: center;
   text-transform: uppercase;
   font-family: "Futura";
+}
+
+header h3 {
+  line-height: 36px;
+}
+
+.front-news-headline {
+  line-height: 36px;
 }
