@@ -74,30 +74,33 @@
             <div class="sp-xs-6"></div>
             <h2><?php _e('Відео факультету', 'brainworks'); ?></h2>
             <div class="sp-xs-4"></div>
-            <?php $video = get_video(get_the_ID()); ?>
-            <div class="department-videos__list row">
-                <?php foreach (get_videos_by_faculty(get_the_ID()) as $video) {
-                        $url = get_post_meta($video->ID, 'url', true);
-                        $id = get_param_from_url($url, 'v');
-                    ?>
-                <div class="col-md-4 col-xs-12">
-                    <a class="department-videos__item" href="<?php echo $url ?>" target="_blank">
-                        <img src="https://img.youtube.com/vi/<?php echo $id; ?>/mqdefault.jpg" />
-                        <div class="department-videos__item__mask">
-                            <i class="far fa-play-circle"></i>
-                        </div>
-                    </a>
+            <?php $video = get_video(get_the_ID()); if ($video):
+                $url = get_post_meta($video->ID, 'url', true);
+                $id = get_param_from_url($url, 'v'); ?>
+            <div class="row video-block">
+                <div class="col-md-6 col-sm-12">
+                    <div class="video-block__thumbnail">
+                        <img src="https://img.youtube.com/vi/<?php echo $id; ?>/mqdefault.jpg"
+                            alt="<?php _e("Дивитися відео", "brainworks"); ?>" title="<?php echo $video->post_title; ?>"
+                            width="100%" class="video-image__inner" />
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/play-video.png" alt="Play" />
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="sp-xs-2"></div>
                 </div>
-                <?php
-                } ?>
+                <div class="col-md-6 col-sm-12 video-block__content">
+                    <h3><?php echo $video->post_title; ?></h3>
+                    <p><?php echo $video->post_content; ?></p>
+                    <div class="sp-xs-2"></div>
+                    <div class="text-right">
+                        <a href="<?php echo $url ?>" target="_blank">
+                            <?php _e('Дивитися', 'brainworks'); ?>
+                        </a>
+                    </div>
+                </div>
             </div>
+            <?php endif; ?>
             <div class="sp-xs-4"></div>
-            <div class="text-right">
-                <a href="/blog" class="department-articles-link department-articles-link--white">
-                    <?php _e('БІЛЬШЕ ВІДЕО', 'brainworks'); ?>
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/arrow-right-link-white.png" />
-                </a>
-            </div>
             <div class="sp-xs-6"></div>
         </div>
     </div>
@@ -109,16 +112,19 @@
             <div class="sp-xs-6"></div>
             <div class="row">
                 <?php foreach (get_teachers_by_faculty(get_the_ID()) as $teacher) { ?>
-                    <div class="col-md-3">
-                        <div class="department-teacher">
-                            <img src="<?php echo get_the_post_thumbnail_url($teacher->ID) ?>" alt="" title="<?php echo $teacher->post_title; ?>" />
-                            <strong class="department-teacher__position"><?php echo get_post_meta($teacher->ID, 'position_f', true); ?></strong>
-                            <h4><?php echo $teacher->post_title; ?></h4>
-                            <p><?php echo get_post_meta($teacher->ID, 'info_f', true); ?></p>
-                        </div>
+                <div class="col-md-3">
+                    <div class="department-teacher">
+                        <img src="<?php echo get_the_post_thumbnail_url($teacher->ID) ?>" alt=""
+                            title="<?php echo $teacher->post_title; ?>" />
+                        <strong
+                            class="department-teacher__position"><?php echo get_post_meta($teacher->ID, 'position_f', true); ?></strong>
+                        <h4><?php echo $teacher->post_title; ?></h4>
+                        <p><?php echo get_post_meta($teacher->ID, 'info_f', true); ?></p>
                     </div>
+                </div>
                 <?php } ?>
             </div>
+            <div class="sp-xs-4"></div>
             <h3 class="text-center"><?php _e('Контакти деканату', 'brainworks'); ?></h3>
             <div class="sp-xs-4"></div>
             <div class="department-contacts">

@@ -25,7 +25,7 @@
                     <?php echo do_shortcode($post->post_content); ?>
                 </div>
                 <div>
-                    ANother content
+                    <?php echo do_shortcode(get_post_meta($post->ID, 'disciplines', true)); ?>
                 </div>
             </div>
         </div>

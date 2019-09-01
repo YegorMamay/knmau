@@ -49,6 +49,11 @@
                 'autosave' => 'false',
                 'fields' => array(
                     array(
+                        'id' => 'disciplines',
+                        'type' => 'wysiwyg',
+                        'name' => 'Дисципліни'
+                    ),
+                    array(
                         'id' => $prefix . 'exam',
                         'type' => 'fieldset_text',
                         'name' => esc_html__( 'Предмети ЗНО', 'metabox-online-generator' ),

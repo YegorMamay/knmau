@@ -695,7 +695,7 @@ if (!function_exists('get_teachers_by_faculty')) {
 }
 
 if (!function_exists('get_video')) {
-    function get_video($id = '') {
+    function get_video($id = '', $home_page = false) {
         $params = [
             'post_type' => 'videos',
             'numberposts' => 1,
@@ -704,7 +704,17 @@ if (!function_exists('get_video')) {
         if ($id) {
             $params['tax_query'] = [generate_tax_query($id)];
         }
-        return get_posts($params);
+        if ($home_page) {
+            $params['meta_query'] = [
+                'key' => 'show_on_front',
+                'compare' => 'IN',
+                'value' => [1, '1', "YES", "Y"]
+            ]; 
+        }
+        $posts = get_posts($params);
+
+        if (sizeof($posts) > 0) return $posts[0];
+        return NULL;
     }
 }
 
