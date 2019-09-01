@@ -139,7 +139,7 @@
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3">
-                <a href="/studentske-zhittya/">
+                <a href="/studentska-rada/">
                     <img src="/wp-content/uploads/student-life.jpg"
                         alt="<?php _e('Студентське життя', 'brainworks') ?>">
                     <p><?php _e('Студентська рада', 'brainworks') ?></p>
@@ -169,19 +169,19 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-4">
-                <a href="#" class="other-content-item">
+                <a href="/ogoloshennya/" class="other-content-item">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/announce.svg">
                     <p>Оголошення</p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4">
-                <a href="#" class="other-content-item">
+                <a href="/nagorodi/" class="other-content-item">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/reward.svg">
                     <p>Нагороди</p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4">
-                <a href="#" class="other-content-item">
+                <a href="/virtualna-biblioteka/" class="other-content-item">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/library.svg">
                     <p>Віртуальна бібліотека</p>
                 </a>
