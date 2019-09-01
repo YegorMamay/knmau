@@ -39,7 +39,7 @@
     <header class="page-header">
         <div class="logo">
 	        <?php get_default_logo_link([
-                'name'    => 'logo.png',
+                'name'    => 'logo.gif',
                 'options' => [
                     'class'  => 'logo-img',
                     'width'  => 562,
