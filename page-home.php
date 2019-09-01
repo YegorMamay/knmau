@@ -134,7 +134,7 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-3">
                 <a href="/erazmus/">
-                    <img src="/wp-content/uploads/gurt.jpg" alt="<?php _e('Гуртожиток', 'brainworks') ?>">
+                    <img src="/wp-content/uploads/erasmus.jpg" alt="<?php _e('Гуртожиток', 'brainworks') ?>">
                     <p><?php _e('Еразмус+', 'brainworks') ?></p>
                 </a>
             </div>
@@ -177,7 +177,7 @@
             <div class="col-xs-12 col-sm-12 col-md-4">
                 <a href="#" class="other-content-item">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/reward.svg">
-                    <p>Нагороди НМАУіЧ</p>
+                    <p>Нагороди</p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4">
