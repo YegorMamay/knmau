@@ -94,30 +94,6 @@
         }
       }
     }
-
-    .kama_breadcrumbs {
-      font-size: 16px;
-      color: #a0a0a3;
-
-      a,
-      span {
-        color: #a0a0a3;
-        font-family: $fontFamilyOne;
-        margin-right: 10px;
-        margin-left: 10px;
-        display: inline-block;
-        font-size: 14px;
-        font-weight: bold;
-
-        &:first-child {
-          margin-left: 0px;
-        }
-
-        &:last-child {
-          margin-right: 0px;
-        }
-      }
-    }
   }
 
   &-slider-wrapper {

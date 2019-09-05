@@ -9844,32 +9844,6 @@ ol.commentlist .comment-body {
   color: #000;
 }
 
-.department-wrapper .kama_breadcrumbs {
-  font-size: 16px;
-  color: #a0a0a3;
-}
-
-.department-wrapper .kama_breadcrumbs a,
-.department-wrapper .kama_breadcrumbs span {
-  color: #a0a0a3;
-  font-family: "Futura";
-  margin-right: 10px;
-  margin-left: 10px;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.department-wrapper .kama_breadcrumbs a:first-child,
-.department-wrapper .kama_breadcrumbs span:first-child {
-  margin-left: 0px;
-}
-
-.department-wrapper .kama_breadcrumbs a:last-child,
-.department-wrapper .kama_breadcrumbs span:last-child {
-  margin-right: 0px;
-}
-
 .department-slider-wrapper {
   padding: 60px 0;
   background-color: #1e2c4f;
@@ -11952,4 +11926,25 @@ header h3 {
 
 .front-news-headline {
   line-height: 36px;
+}
+
+.kama_breadcrumbs {
+  font-size: 16px;
+  color: #a0a0a3;
+}
+
+.kama_breadcrumbs,
+.kama_breadcrumbs a,
+.kama_breadcrumbs span {
+  color: #a0a0a3;
+  font-family: "Futura";
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.kama_breadcrumbs .kb_sep,
+.kama_breadcrumbs a .kb_sep,
+.kama_breadcrumbs span .kb_sep {
+  margin: 0 8px 0 10px;
 }

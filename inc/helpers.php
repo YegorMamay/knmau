@@ -599,7 +599,7 @@ if (!function_exists('get_department_breadcrumbs')) {
                 '<span>'.get_the_title($id).'</span>'
             ];
             if ($post_type && $post_type === 'faculties') unset($path[2]);
-            return implode('/', $path);
+            return implode('<span class="kb_sep">/</span>', $path);
         }
     }
 }
