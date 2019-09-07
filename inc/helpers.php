@@ -727,3 +727,13 @@ if (!function_exists('meta_check')) {
         return $value;
     }
 }
+
+if (!function_exists('parse_date')) {
+    function parse_date($str) {
+        return str_replace([
+            'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
+        ], [
+            'січня', 'лютого', 'березеня', 'квітня', 'травня', 'червня', 'липня', 'серпня', 'вересня', 'жовтня', 'листопада', 'грудня', 
+        ], date('d F H:i', strtotime($str)));
+    }
+}

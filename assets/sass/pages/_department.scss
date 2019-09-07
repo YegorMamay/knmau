@@ -375,7 +375,6 @@
   }
 }
 
-
 .video-block {
   &__thumbnail {
     position: relative;
@@ -436,5 +435,57 @@
         background-color: $themeColorTwo;
       }
     }
+  }
+}
+
+.concert-hall-toggler {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  > a,
+  > span {
+    display: block;
+    padding: 15px 15px;
+    border: 1.5px solid $themeColorTwo;
+    font-size: 12px;
+    font-family: $fontFamilyOne;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ccc;
+    background-color: #fff;
+
+    flex: 1;
+
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+  }
+
+  span,
+  a:hover {
+    background-color: $themeColorTwo;
+    color: #fff;
+  }
+}
+
+.concert-item {
+  margin-bottom: 35px;
+
+  h3 {
+    font-size: 20px;
+    margin: 5px 0 5px;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+
+  .date {
+    display: block;
+    font-size: 16px;
+    font-style: italic;
+    color: #ccc;
   }
 }

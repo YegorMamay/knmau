@@ -10236,6 +10236,66 @@ ol.commentlist .comment-body {
   background-color: #a63031;
 }
 
+.concert-hall-toggler {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.concert-hall-toggler > a,
+.concert-hall-toggler > span {
+  display: block;
+  padding: 15px 15px;
+  border: 1.5px solid #a63031;
+  font-size: 12px;
+  font-family: "Futura";
+  text-transform: uppercase;
+  text-align: center;
+  color: #ccc;
+  background-color: #fff;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.concert-hall-toggler span,
+.concert-hall-toggler a:hover {
+  background-color: #a63031;
+  color: #fff;
+}
+
+.concert-item {
+  margin-bottom: 35px;
+}
+
+.concert-item h3 {
+  font-size: 20px;
+  margin: 5px 0 5px;
+}
+
+.concert-item p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.concert-item .date {
+  display: block;
+  font-size: 16px;
+  font-style: italic;
+  color: #ccc;
+}
+
 h1, h2, h3, h4, h5, h6, h1.hero-title {
   color: #1e2c4f;
   font-family: "Lora";

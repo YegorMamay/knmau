@@ -21,3 +21,14 @@
         "singular_label" => __('Кафедри', 'brainworks'), 
         "rewrite" => array( 'slug' => 'departments', 'with_front'=> true, 'hierarchical' => true)
     ));
+    
+    register_taxonomy("concert-hall", ["concerts"], array(
+        'public'            =>  true,
+        'hierarchical'      =>  true,
+        'show_in_nav_menus' =>  true,
+        'has_archive'       =>  true,
+        'query_var' => false,
+        "label" => __('Зала', 'brainworks'), 
+        "singular_label" => __('Зала', 'brainworks'), 
+        "rewrite" => array( 'slug' => 'concert-hall', 'with_front'=> true, 'hierarchical' => true)
+    ));
