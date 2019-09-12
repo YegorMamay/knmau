@@ -737,3 +737,11 @@ if (!function_exists('parse_date')) {
         ], date('d F H:i', strtotime($str)));
     }
 }
+
+if (!function_exists('layer_slider')) {
+    function layer_slider($arg) {
+        if (function_exists('layerslider')) {
+            layerslider($arg);
+        }
+    }
+}

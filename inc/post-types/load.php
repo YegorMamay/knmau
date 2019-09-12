@@ -6,3 +6,4 @@
     require "faculties.php";
     require "advert.php";
     require "concerts.php";
+    require "rector.php";

@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 <div class="container">
-
-    <!-- <?php if (function_exists('kama_breadcrumbs')) kama_breadcrumbs(' » '); ?> -->
+    <div>
+        <?php layer_slider(2); ?>
+    </div>
     <div class="sp-xs-5"></div>
     <div class="concert-hall-toggler">
         <?php 
