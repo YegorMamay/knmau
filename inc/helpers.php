@@ -745,3 +745,28 @@ if (!function_exists('layer_slider')) {
         }
     }
 }
+
+if (!function_exists('get_concerts_by_term')) {
+    function get_concerts_by_term($term, $show_on_front = false) {
+        $query = [
+            'post_type' => 'concerts',
+            'tax_query' => [
+                'taxonomy' => 'concert-hall',
+                'field' => 'term_id',
+                'terms' => $term->term_id,
+            ],
+            'posts_per_page' => 4,
+            'numberposts' => 4
+        ];
+        if ($show_on_front) {
+            $query['meta_query'] = [
+                'key' => 'show_on_front',
+                'compare' => 'IN',
+                'value' => [1, true]
+            ];
+        }
+        var_dump($query);
+        $posts = get_posts($query);
+        return $posts;
+    }
+}

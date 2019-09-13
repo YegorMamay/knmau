@@ -53,6 +53,11 @@
                         'id' => 'date',
                         'type' => 'datetime',
                         'name' => __("Дата концерту", "brainworks")
+                    ],
+                    [
+                        'id' => 'show_on_front',
+                        'type' => 'checkbox',
+                        'name' => __('Показати на головній', 'brainworks')
                     ]
                 ),
             );
@@ -62,4 +67,3 @@
         add_filter( 'rwmb_meta_boxes', 'concerts_metabox' );
     }
     
-
