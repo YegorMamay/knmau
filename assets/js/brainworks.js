@@ -35,6 +35,25 @@
             prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-chevron-left" /></button>',
             nextArrow: '<button type="button" class="slick-next"><i class="fa fa-chevron-right" /></button>'
         });
+        $(".concert-hall-toggler.js-toggler > span").each(function(_, el) {
+            var toggler$ = $(el);
+            toggler$.click(function(e) {
+                e.preventDefault();
+                var id = toggler$.attr("data-toggle");
+                if (id) {
+                    $("div[data-toggle-target]").each(function(_, target) {
+                        var target$ = $(target);
+                        if (target$.attr("data-toggle-target") == id) {
+                            target$.show();
+                        } else {
+                            target$.hide();
+                        }
+                    });
+                }
+                $(".concert-hall-toggler.js-toggler > span").removeClass("active");
+                toggler$.addClass("active");
+            });
+        }).eq(0).click();
         $(".tabs").each(function(_, element) {
             var tabs$ = $(element), controls$ = tabs$.find(".controls > button"), content$ = tabs$.find(".content > div");
             controls$.each(function(index, control) {

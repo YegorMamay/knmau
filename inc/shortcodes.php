@@ -637,3 +637,53 @@ if (!function_exists('bw_teachers_shortcode')) {
     
     add_shortcode('bw-teachers-slider', 'bw_teachers_shortcode');
 } 
+
+if (!function_exists('bw_concerts_shortcode')) {
+    function bw_concerts_shortcode() {
+
+        $terms = get_terms([
+            'taxonomy' => 'concert-hall',
+            'hide_empty' => false
+        ]);
+        $output = '<div class="concerts-wrapper">
+            <div class="container">
+                <div class="concerts-tabs">
+                    <div class="concert-hall-toggler js-toggler">';
+        foreach ($terms as $term):
+            $output .= '<span data-toggle="_'.$term->term_id.'">'.$term->name.'</span>';
+        endforeach;
+        $output .= '</div></div>';
+
+        foreach ($terms as $term):
+            $output .= '<div class="row concert-row" data-toggle-target="_'.$term->term_id.'">';
+            foreach (get_concerts_by_term($term, true) as $post):
+                $output .= '<div class="concert-block col-md-3 col-sm-6 col-xs-12">';
+                $date = get_displayed_date(get_post_meta($post->ID, 'date', true));
+                if ($date):
+                    $output .= '<div class="date">
+                    <div class="date-row">
+                        <div class="date-col">
+                            <span class="day">'.$date['day'].'</span>
+                        </div>
+                        <div class="date-col">
+                            <span class="month">'.$date['month'].'</span>
+                            <span class="time">'.$date['time'].'</span>
+                        </div>
+                    </div>
+                </div>';
+                endif;
+                $output .= '<h4>'.$post->post_title.'</h4></div>';
+            endforeach;
+            $output .= '</div>';
+        endforeach;
+
+        $output .= '<div class="text-right"><a href="'.get_term_link($terms[0]->term_id).'" class="department-articles-link">
+            '.__('Усі анонси', 'brainworks').'<img src="'.get_template_directory_uri().'/assets/img/arrow-right-link.png" />
+        </a></div>';
+
+        $output .= '</div></div>';
+        return $output;
+    }
+
+    add_shortcode('bw-concerts', 'bw_concerts_shortcode');
+}

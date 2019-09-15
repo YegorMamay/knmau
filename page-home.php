@@ -51,13 +51,7 @@
     </div>
 </div>
 
-<!--<div class="concerts">
-    <div class="sp-xs-6"></div>
-
-
-
-    <div class="sp-xs-6"></div>
-</div>-->
+<?php echo do_shortcode('[bw-concerts]'); ?>
 
 <div class="sp-xs-6"></div>
 

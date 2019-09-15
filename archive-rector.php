@@ -7,7 +7,6 @@
     <div class="sp-xs-6"></div>
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-            <div class="col-xs-2"></div>
             <?php get_template_part('loops/content', 'rector'); ?>
         </div>
     </div><!-- /.row -->

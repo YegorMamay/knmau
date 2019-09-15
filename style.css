@@ -10296,20 +10296,157 @@ ol.commentlist .comment-body {
   color: #ccc;
 }
 
-h1, h2, h3, h4, h5, h6, h1.hero-title {
+.concert-block h4 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.concert-block .date {
+  margin-bottom: 25px;
+}
+
+.concert-block .date-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 600px) {
+  .concert-block .date-row {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+.concert-block .date-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.concert-block .date .day {
+  color: #a63031;
+  font-size: 56px;
+  line-height: 50px;
+  margin-right: 15px;
+}
+
+.concert-block .date .month {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.concert-block .date .time {
+  font-size: 16px;
+  line-height: 16px;
+  color: #a0a0a3;
+}
+
+.concert-row {
+  padding: 30px 0;
+}
+
+.concerts-wrapper {
+  padding: 50px 0;
+  background-color: #edeef0;
+}
+
+.concerts-wrapper .concert-hall-toggler > span {
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  width: auto;
+  padding: 0 45px;
+  height: 54px;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.concerts-wrapper .concert-hall-toggler > span:not(.active) {
+  color: #a0a0a3;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+  .concerts-wrapper .concert-hall-toggler {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .concerts-wrapper .concert-hall-toggler > span {
+    width: 100%;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1.hero-title {
   color: #1e2c4f;
   font-family: "Lora";
 }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h1.hero-title a {
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+h1.hero-title a {
   color: #1e2c4f;
 }
 
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, h1.hero-title a:hover {
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover,
+h1.hero-title a:hover {
   color: #2c4174;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   color: #1e2c4f;
   font-family: "Futura";
 }
@@ -10403,6 +10540,16 @@ span {
   li a {
     font-size: 18px;
     line-height: 22px;
+  }
+}
+
+.single-title {
+  line-height: 45px;
+}
+
+@media screen and (max-width: 600px) {
+  .single-title {
+    line-height: 36px;
   }
 }
 

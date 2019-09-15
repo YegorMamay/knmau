@@ -729,12 +729,12 @@ if (!function_exists('meta_check')) {
 }
 
 if (!function_exists('parse_date')) {
-    function parse_date($str) {
+    function parse_date($str, $format = 'd F H:i') {
         return str_replace([
             'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
         ], [
             'січня', 'лютого', 'березеня', 'квітня', 'травня', 'червня', 'липня', 'серпня', 'вересня', 'жовтня', 'листопада', 'грудня', 
-        ], date('d F H:i', strtotime($str)));
+        ], date($format, strtotime($str)));
     }
 }
 
@@ -748,25 +748,45 @@ if (!function_exists('layer_slider')) {
 
 if (!function_exists('get_concerts_by_term')) {
     function get_concerts_by_term($term, $show_on_front = false) {
+        wp_reset_postdata();
         $query = [
             'post_type' => 'concerts',
-            'tax_query' => [
-                'taxonomy' => 'concert-hall',
-                'field' => 'term_id',
-                'terms' => $term->term_id,
-            ],
             'posts_per_page' => 4,
-            'numberposts' => 4
+            'tax_query' => [
+                [
+                    'taxonomy' => 'concert-hall',
+                    'terms' => $term->term_id,
+                    'field' => 'term_id',
+                    'include_children' => true,
+                    'operator' => 'IN'
+                ]
+            ]
         ];
         if ($show_on_front) {
             $query['meta_query'] = [
-                'key' => 'show_on_front',
-                'compare' => 'IN',
-                'value' => [1, true]
-            ];
+                [
+                    'key' => 'show_on_front',
+                    'compare' => 'IN',
+                    'value' => [1, '1', "YES", "Y"]
+                ]
+            ]; 
         }
-        var_dump($query);
-        $posts = get_posts($query);
-        return $posts;
+        $articles = new WP_Query($query);
+        return $articles->posts;
+    }
+}
+
+if (!function_exists('get_displayed_date')) {
+    function get_displayed_date($date) {
+        if (!$date) return null;
+
+        $str_date = strtotime($date);
+
+        return [
+            'day' => date('d', $str_date),
+            'month' => parse_date($date, 'F'),
+            'time' => date('H:i', $str_date)
+        ];
+        var_dump($str_date);
     }
 }
