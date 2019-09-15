@@ -169,9 +169,9 @@
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4">
-                <a href="/nagorodi/" class="other-content-item">
+                <a href="/status-natsionalnogo/" class="other-content-item">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/reward.svg">
-                    <p>Нагороди</p>
+                    <p>Статус національного</p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4">
