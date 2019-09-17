@@ -31,7 +31,19 @@
             </ul>
         <?php } ?>
 
-        <?php echo do_shortcode('[bw-social]'); ?>
+<nav class="second-menu">
+    <?php wp_nav_menu(array(
+        'theme_location' => 'second-menu',
+        'container' => false,
+        'menu_class' => 'menu-container',
+        'menu_id' => '',
+        'fallback_cb' => 'wp_page_menu',
+        'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+        'depth' => 2
+    )); ?>
+</nav>
+
+            <?php echo do_shortcode('[bw-social]'); ?>
         </div>
       </div>
     </div>
