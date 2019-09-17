@@ -15,14 +15,16 @@
             ?>
         </div>
         <div class="sp-xs-5"></div>
+        <?php echo do_shortcode($post->post_content); ?>
+        <div class="sp-xs-5"></div>
         <div class="tabs">
             <div class="controls">
-                <button type="button" class="active"><?php _e('Історія кафедри', 'brainworks'); ?></button>
+                <button type="button" class="active"><?php _e('Розклад', 'brainworks'); ?></button>
                 <button type="button"><?php _e('Дисципліни', 'brainworks'); ?></button>
             </div>
             <div class="content">
                 <div>
-                    <?php echo do_shortcode($post->post_content); ?>
+                    <?php echo do_shortcode(get_post_meta($post->ID, 'schedule', true)); ?>
                 </div>
                 <div>
                     <?php echo do_shortcode(get_post_meta($post->ID, 'disciplines', true)); ?>

@@ -49,6 +49,11 @@
                 'autosave' => 'false',
                 'fields' => array(
                     array(
+                        'id' => 'schedule',
+                        'type' => 'wysiwyg',
+                        'name' => 'Розклад'
+                    ),
+                    array(
                         'id' => 'disciplines',
                         'type' => 'wysiwyg',
                         'name' => 'Дисципліни'
