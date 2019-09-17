@@ -289,8 +289,11 @@
   padding-right: 20px;
   .menu-container {
     list-style: none;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     li {
+      margin-left: 10px;
       a {
         color: #fff;
       }

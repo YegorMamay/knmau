@@ -11266,8 +11266,22 @@ hr.style-three {
     padding-right: 0px;
     margin: 5px 0;
   }
-  .pre-header .inner-wrap > nav li {
+  .pre-header .inner-wrap > nav .menu-container {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 0;
+  }
+  .pre-header .inner-wrap > nav .menu-container li {
     display: block;
+    margin-left: 0px;
   }
 }
 
@@ -11654,6 +11668,20 @@ hr.style-three {
 
 .second-menu .menu-container {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.second-menu .menu-container li {
+  margin-left: 10px;
 }
 
 .second-menu .menu-container li a {
