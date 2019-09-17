@@ -11622,6 +11622,10 @@ hr.style-three {
   transform: rotate(-45deg);
 }
 
+.menu-container {
+  list-style: none;
+}
+
 .nav-mobile-header {
   display: none;
 }
