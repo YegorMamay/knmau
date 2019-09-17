@@ -175,9 +175,10 @@
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4">
-                <a href="/virtualna-biblioteka/" class="other-content-item">
+                <a href="/istoriya/" class="other-content-item">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/library.svg">
-                    <p>Віртуальна бібліотека</p>
+                    <div class="sp-xs-1"></div>
+                    <p>Історія НМАУ</p>
                 </a>
             </div>
         </div>
