@@ -131,6 +131,7 @@
                     <img src="/wp-content/uploads/erasmus.jpg" alt="<?php _e('Гуртожиток', 'brainworks') ?>">
                     <p><?php _e('Еразмус+', 'brainworks') ?></p>
                 </a>
+                <div class="sp-xs-5"></div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3">
                 <a href="/studentska-rada/">
@@ -138,23 +139,26 @@
                         alt="<?php _e('Студентське життя', 'brainworks') ?>">
                     <p><?php _e('Студентська рада', 'brainworks') ?></p>
                 </a>
+                <div class="sp-xs-5"></div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3">
                 <a href="/virtualnij-tur/">
                     <img src="/wp-content/uploads/virtual-tour.jpg" alt="<?php _e('Віртуальний тур', 'brainworks') ?>">
                     <p><?php _e('Віртуальний тур', 'brainworks') ?></p>
                 </a>
+                <div class="sp-xs-5"></div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3">
                 <a href="/galereya/">
                     <img src="/wp-content/uploads/gallery.jpg" alt="<?php _e('Фотогалерея', 'brainworks') ?>">
                     <p><?php _e('Фотогалерея', 'brainworks') ?></p>
                 </a>
+                <div class="sp-xs-5"></div>
             </div>
         </div>
     </div>
 
-    <div class="sp-xs-8"></div>
+    <div class="sp-xs-3"></div>
 </div>
 
 <div class="other-content">
