@@ -37,4 +37,33 @@
 
     add_action('init', 'bw_register_cpts_advert');
 
+    
+
+    function register_advert_metabox( $meta_boxes ) {
+        $prefix = '';
+    
+        $meta_boxes[] = array(
+            'id' => 'advert_metabox',
+            'title' => esc_html__( 'Оголошення (дані):', 'brainworks' ),
+            'post_types' => array('advert'),
+            'context' => 'advanced',
+            'priority' => 'default',
+            'autosave' => 'false',
+            'fields' => array(
+                array(
+                    'id' => $prefix . 'date_from',
+                    'name' => esc_html__( 'Дата от:', 'brainworks' ),
+                    'type' => 'date',
+                ),
+                array(
+                    'id' => $prefix . 'date_to',
+                    'type' => 'date',
+                    'name' => esc_html__( 'Дата до:', 'brainworks' ),
+                ),
+            ),
+        );
+
+        return $meta_boxes;
+    }
+    add_filter( 'rwmb_meta_boxes', 'register_advert_metabox' );
 

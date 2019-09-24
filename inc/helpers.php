@@ -787,6 +787,5 @@ if (!function_exists('get_displayed_date')) {
             'month' => parse_date($date, 'F'),
             'time' => date('H:i', $str_date)
         ];
-        var_dump($str_date);
     }
 }

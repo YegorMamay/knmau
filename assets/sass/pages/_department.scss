@@ -434,6 +434,11 @@
         height: 1.5px;
         background-color: $themeColorTwo;
       }
+
+      @media screen and (max-width: 640px) {
+        font-size: 23px;
+        line-height: 32px;
+      }
     }
   }
 }
@@ -494,6 +499,11 @@
   h4 {
     font-size: 16px;
     line-height: 24px;
+
+    @media screen and (max-width: 600px) {
+      text-align: center; 
+      margin-bottom: 15px;
+    }
   }
 
   .date {
@@ -507,6 +517,11 @@
       @media screen and (max-width: 600px) {
         justify-content: center;
       }
+    }
+
+    
+    @media screen and (max-width: 600px) {
+      margin-bottom: 15px; 
     }
 
     &-col {
@@ -571,5 +586,36 @@
         width: 100%;
       }
     }
+  }
+}
+
+.notice-date {
+  text-align: center;
+
+  > span {
+     display: block;
+  }
+
+  .days,
+  .year {
+    color: $themeColorTwo;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .month {
+    color: $themeColorOne;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
+
+.notice-container {
+  padding: 25px 0;
+  border-top: 2px solid $themeColorTwo;
+
+  &:first-child {
+    border-top: 0px;
   }
 }
