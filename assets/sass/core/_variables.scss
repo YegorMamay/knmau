@@ -79,14 +79,14 @@ $linkFontColor: #000;
 $linkFontColorActive: lighten($linkFontColor, 20%);
 
 // TABLE
-$tableBgColor: $themeColorTwo;
-$tableBgColorActive: lighten($themeColorTwo, 10%);
+$tableBgColor: $themeColorThree;
+$tableBgColorActive: darken($themeColorThree, 15%);
 $tableBorderColor: #fff;
 $tableBorderColorActive: #989898;
-$tableOddBgColor: $themeColorOne;
-$tableOddFontColor: #fff;
-$tableEvenBgColor: $themeColorTwo;
-$tableEvenFontColor: #fff;
+$tableOddBgColor: darken($themeColorThree, 10%);
+$tableOddFontColor: #000000;
+$tableEvenBgColor: darken($themeColorThree, 5%);
+$tableEvenFontColor: #000000;
 
 
 // Icons
