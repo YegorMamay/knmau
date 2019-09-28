@@ -134,10 +134,10 @@
                 <div class="sp-xs-5"></div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-3">
-                <a href="/studentska-rada/">
-                    <img src="/wp-content/uploads/student-life.jpg"
-                        alt="<?php _e('Студентське життя', 'brainworks') ?>">
-                    <p><?php _e('Студентська рада', 'brainworks') ?></p>
+                <a href="/muzichnij-tsentr-konfutsiya/">
+                    <img src="/wp-content/uploads/hanban-logo.jpg"
+                        alt="<?php _e('Музичний центр Конфуція', 'brainworks') ?>">
+                    <p><?php _e('Музичний центр Конфуція', 'brainworks') ?></p>
                 </a>
                 <div class="sp-xs-5"></div>
             </div>
