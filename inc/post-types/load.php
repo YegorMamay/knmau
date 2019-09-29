@@ -7,3 +7,4 @@
     require "advert.php";
     require "concerts.php";
     require "rector.php";
+    require "home-additional.php";

@@ -125,39 +125,25 @@
     <div class="sp-xs-6"></div>
 
     <div class="container">
+        <?php $home_additional = get_posts([
+                'post_type' => 'home_additional',
+                'numberposts' => 4,
+                'posts_per_page' => 4,
+                'order' => 'ASC'
+            ]);
+        ?>
         <div class="row">
+            <?php foreach ($home_additional as $ha): ?>
             <div class="col-xs-12 col-sm-12 col-md-3">
-                <a href="/erazmus/">
-                    <img src="/wp-content/uploads/erasmus.jpg" alt="<?php _e('Гуртожиток', 'brainworks') ?>">
-                    <p><?php _e('Еразмус+', 'brainworks') ?></p>
+                <a href="<?php echo get_post_meta($ha->ID, 'url', true) ?>">
+                    <img src="<?php echo get_the_post_thumbnail_url($ha->ID) ?>" alt="<?php _e('Гуртожиток', 'brainworks') ?>">
+                    <p><?php echo $ha->post_title; ?></p>
                 </a>
                 <div class="sp-xs-5"></div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-3">
-                <a href="/muzichnij-tsentr-konfutsiya/">
-                    <img src="/wp-content/uploads/hanban-logo.jpg"
-                        alt="<?php _e('Музичний центр Конфуція', 'brainworks') ?>">
-                    <p><?php _e('Музичний центр Конфуція', 'brainworks') ?></p>
-                </a>
-                <div class="sp-xs-5"></div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-3">
-                <a href="/virtualnij-tur/">
-                    <img src="/wp-content/uploads/virtual-tour.jpg" alt="<?php _e('Віртуальний тур', 'brainworks') ?>">
-                    <p><?php _e('Віртуальний тур', 'brainworks') ?></p>
-                </a>
-                <div class="sp-xs-5"></div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-3">
-                <a href="/galereya/">
-                    <img src="/wp-content/uploads/gallery.jpg" alt="<?php _e('Фотогалерея', 'brainworks') ?>">
-                    <p><?php _e('Фотогалерея', 'brainworks') ?></p>
-                </a>
-                <div class="sp-xs-5"></div>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
-
     <div class="sp-xs-3"></div>
 </div>
 
