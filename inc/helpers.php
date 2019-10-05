@@ -709,9 +709,11 @@ if (!function_exists('get_video')) {
         }
         if ($home_page) {
             $params['meta_query'] = [
-                'key' => 'show_on_front',
-                'compare' => 'IN',
-                'value' => [1, '1', "YES", "Y"]
+                [
+                    'key' => 'show_on_front',
+                    'compare' => 'IN',
+                    'value' => [1, '1', "YES", "Y"]
+                ]
             ]; 
         }
         $posts = get_posts($params);
