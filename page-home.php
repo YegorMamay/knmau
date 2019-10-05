@@ -155,20 +155,20 @@
             <div class="col-xs-12 col-sm-12 col-md-4">
                 <a href="/advert/" class="other-content-item">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/announce.svg">
-                    <p>Оголошення</p>
+                    <p><?php _e('Оголошення', 'brainworks') ?></p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4">
                 <a href="/status-natsionalnogo/" class="other-content-item">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/reward.svg">
-                    <p>Статус національного</p>
+                    <p><?php _e('Статус національного', 'brainworks') ?></p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4">
                 <a href="/istoriya/" class="other-content-item">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/library.svg">
                     <div class="sp-xs-1"></div>
-                    <p>Історія НМАУ</p>
+                    <p><?php _e('Історія НМАУ', 'brainworks') ?></p>
                 </a>
             </div>
         </div>
