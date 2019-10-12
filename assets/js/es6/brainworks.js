@@ -45,7 +45,16 @@
       prevArrow:
         '<button type="button" class="slick-prev"><i class="fa fa-chevron-left" /></button>',
       nextArrow:
-        '<button type="button" class="slick-next"><i class="fa fa-chevron-right" /></button>'
+        '<button type="button" class="slick-next"><i class="fa fa-chevron-right" /></button>',
+      responsive: [
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        }
+      ]
     });
 
     $(".concert-hall-toggler.js-toggler > span")
