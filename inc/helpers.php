@@ -622,7 +622,7 @@ if (!function_exists('get_departments_by_faculty')) {
             'tax_query' => [
                 generate_tax_query($id)
             ],
-            'numberposts' => 4
+            'numberposts' => 5
         ]);
     }
 }
