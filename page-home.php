@@ -10,7 +10,7 @@
 <div class="sp-xs-6"></div>
 
 <div class="main-news container">
-    <h2><?php _e('Головні новини НМАУ', 'brainworks') ?></h2>
+    <h2><?php _e('Main News of UNTАM', 'brainworks') ?></h2>
     <div class="sp-xs-3"></div>
 
     <?php echo do_shortcode('[bw-advert category=32]'); ?>
@@ -57,7 +57,7 @@
 
 <div class="faculties">
 
-    <h3 class="text-center"><?php _e('Факультети', 'brainworks') ?></h3>
+    <h3 class="text-center"><?php _e('Faculties', 'brainworks') ?></h3>
 
     <div class="sp-xs-3"></div>
     <div class="divider"></div>
@@ -68,45 +68,45 @@
             <div class="col-xs-12 col-sm-12 col-md-2">
                 <a href="/faculties/fortepiannij-fakultet/" class="shadow-hover">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/piano-fac.svg"
-                        alt="<?php _e('Фортепіанний факультет', 'brainworks') ?>">
-                    <p><?php _e('Фортепіанний факультет', 'brainworks') ?></p>
+                        alt="<?php _e('Piano faculty', 'brainworks') ?>">
+                    <p><?php _e('Piano faculty', 'brainworks') ?></p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
                 <a href="/faculties/vokalnij-ta-dirigentskij-fakultet/" class="shadow-hover">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/vocal-conductor-fac.svg"
-                        alt="<?php _e('Вокальний та диригентський факультет', 'brainworks') ?>">
-                    <p><?php _e('Вокальний та диригентський факультет', 'brainworks') ?></p>
+                        alt="<?php _e('Vocal and conducting faculty', 'brainworks') ?>">
+                    <p><?php _e('Vocal and conducting faculty', 'brainworks') ?></p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
                 <a href="/faculties/orkestrovij-fakultet/" class="shadow-hover">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/orchestra-fac.svg"
-                        alt="<?php _e('Оркестровий факультет', 'brainworks') ?>">
-                    <p><?php _e('Оркестровий факультет', 'brainworks') ?></p>
+                        alt="<?php _e('Orchestral faculty', 'brainworks') ?>">
+                    <p><?php _e('Orchestral faculty', 'brainworks') ?></p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
                 <a href="/faculties/fakultet-narodnih-instrumentiv/" class="shadow-hover">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/folk-instruments-fac.svg"
-                        alt="<?php _e('Факультет народних інструментів', 'brainworks') ?>">
-                    <p><?php _e('Факультет народних інструментів', 'brainworks') ?></p>
+                        alt="<?php _e('Folk instrument faculty', 'brainworks') ?>">
+                    <p><?php _e('Folk instrument faculty', 'brainworks') ?></p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
                 <a href="faculties/fakultet-istoriko-teoretichnij-kompozitorskij-ta-inozemnih-studentiv/"
                     class="shadow-hover">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/composer-fac.svg"
-                        alt="<?php _e('Факультет історико-теоретичний, композиторський та іноземних студентів', 'brainworks') ?>">
-                    <p><?php _e('Факультет історико-теоретичний, композиторський та іноземних студентів', 'brainworks') ?>
+                        alt="<?php _e('Faculty of history and theory of music and composition, and foreign students', 'brainworks') ?>">
+                    <p><?php _e('Faculty of history and theory of music and composition, and foreign students', 'brainworks') ?>
                     </p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
                 <a href="/faculties/mizhfakultetski-kafedri/" class="shadow-hover">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/interdepartmental-fac.svg"
-                        alt="<?php _e('Міжфакультетські кафедри', 'brainworks') ?>">
-                    <p><?php _e('Міжфакультетські кафедри', 'brainworks') ?></p>
+                        alt="<?php _e('Inter-faculty departments', 'brainworks') ?>">
+                    <p><?php _e('Inter-faculty departments', 'brainworks') ?></p>
                 </a>
             </div>
         </div>
@@ -118,7 +118,7 @@
 <div class="more-about dark-bg">
     <div class="sp-xs-6"></div>
 
-    <h2 class="text-center"><?php _e('Більше про НМАУ', 'brainworks') ?></h2>
+    <h2 class="text-center"><?php _e('More about UNTАM', 'brainworks') ?></h2>
 
     <div class="sp-xs-3"></div>
     <div class="divider"></div>

@@ -1,14 +1,13 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: brainworks-v4.7\n"
+"Project-Id-Version: knmau\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-22 18:22+0000\n"
-"PO-Revision-Date: 2019-10-22 18:26+0000\n"
+"POT-Creation-Date: 2019-10-22 13:09+0000\n"
+"PO-Revision-Date: 2019-10-22 13:09+0000\n"
 "Last-Translator: YegorMamay <yegor19.05@gmail.com>\n"
-"Language-Team: Ukrainian\n"
-"Language: uk\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
-"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"Language-Team: English (UK)\n"
+"Language: en_GB\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -102,7 +101,7 @@ msgstr ""
 
 #: search.php:5
 msgid "Search Results for"
-msgstr "Результат пошуку для"
+msgstr ""
 
 #. Name of the template
 msgid "Sidebar Left"
@@ -110,19 +109,19 @@ msgstr ""
 
 #: 404.php:7
 msgid "Error"
-msgstr "Помилка"
+msgstr ""
 
 #: 404.php:8
 msgid "The page you were looking for does not exist."
-msgstr "Сторінка, яку ви шукаєте, не існує"
+msgstr ""
 
 #: 404.php:13
 msgid "Back to the homepage"
-msgstr "Повернутися на головну"
+msgstr ""
 
 #: 404.php:18
 msgid "Or use search"
-msgstr "Або скористайтеся пошуком"
+msgstr ""
 
 #. Name of the template
 msgid "Page Without Breadcrumbs"
@@ -130,44 +129,44 @@ msgstr ""
 
 #. Name of the template
 msgid "Home Page"
-msgstr "Головна сторінка"
+msgstr ""
 
 #: page-home.php:13
 msgid "Головні новини НМАУ"
-msgstr ""
+msgstr "Main News of UNTАM"
 
-#: page-home.php:60
-msgid "Faculties"
-msgstr "Факультети"
+#: page-home.php:60 inc/taxonomies.php:9 inc/helpers.php:597
+#: inc/post-types/faculties.php:5
+msgid "Факультети"
+msgstr "Faculties"
 
 #: page-home.php:71 page-home.php:72
-msgid "Piano faculty"
-msgstr "Фортепіанний факультет"
+msgid "Фортепіанний факультет"
+msgstr ""
 
 #: page-home.php:78 page-home.php:79
-msgid "Vocal and conducting faculty"
-msgstr "Вокальний і диригентський факультети"
+msgid "Вокальний та диригентський факультет"
+msgstr ""
 
 #: page-home.php:85 page-home.php:86
-msgid "Orchestral faculty"
-msgstr "Оркестровий факультет"
+msgid "Оркестровий факультет"
+msgstr ""
 
 #: page-home.php:92 page-home.php:93
-msgid "Folk instrument faculty"
-msgstr "Факультет народних інструментів"
+msgid "Факультет народних інструментів"
+msgstr ""
 
 #: page-home.php:100 page-home.php:101
-msgid ""
-"Faculty of history and theory of music and composition, and foreign students"
-msgstr "Історико-теоретичний, композиторський і іноземних студентів факультет"
+msgid "Факультет історико-теоретичний, композиторський та іноземних студентів"
+msgstr ""
 
 #: page-home.php:108 page-home.php:109
-msgid "Inter-faculty departments"
-msgstr "Міжфакультетські кафедри"
+msgid "Міжфакультетські кафедри"
+msgstr ""
 
 #: page-home.php:121
 msgid "Більше про НМАУ"
-msgstr ""
+msgstr "More about UNTАM"
 
 #: page-home.php:139
 msgid "Гуртожиток"
@@ -175,15 +174,15 @@ msgstr ""
 
 #: page-home.php:158
 msgid "Advertisement"
-msgstr "Оголошення"
+msgstr ""
 
 #: page-home.php:164
 msgid "National status "
-msgstr "Статус національного"
+msgstr ""
 
 #: page-home.php:171
 msgid "History of UNTАM"
-msgstr "Історія НМАУ"
+msgstr ""
 
 #: archive-rector.php:5
 msgid "Сторінка ректора"
@@ -195,7 +194,7 @@ msgstr ""
 
 #: searchform.php:2
 msgid "Search"
-msgstr "Пошук"
+msgstr ""
 
 #. Name of the template
 msgid "Sidebar Right"
@@ -215,7 +214,7 @@ msgstr ""
 
 #: footer.php:23
 msgid "Developed by"
-msgstr "Розроблено"
+msgstr ""
 
 #: footer.php:37
 msgid "Edit Scroll Top"
@@ -231,7 +230,7 @@ msgstr ""
 
 #: inc/login.php:21
 msgid "<strong>ERROR:</strong> The username and password is incorrect."
-msgstr "ПОМИЛКА: невірні ім'я чи пароль."
+msgstr ""
 
 #: inc/navbar.php:4
 msgid "Main Navigation"
@@ -244,7 +243,7 @@ msgstr ""
 #: inc/LoadMorePosts.php:107 inc/shortcodes.php:364 loops/content-rector.php:36
 #: loops/content-2.php:36
 msgid "Continue reading"
-msgstr "Читати далі"
+msgstr ""
 
 #: inc/LoadMorePosts.php:143
 msgid "Load more posts..."
@@ -276,58 +275,54 @@ msgstr ""
 
 #: inc/setup.php:235
 msgid "Front page"
-msgstr "Головна"
+msgstr ""
 
 #: inc/setup.php:236
 #, php-format
 msgid "Page %d"
-msgstr "Сторінка %d"
+msgstr ""
 
 #: inc/setup.php:237
 msgid "Error 404"
-msgstr "Помилка 404"
+msgstr ""
 
 #: inc/setup.php:238
 #, php-format
 msgid "Search results by query - <b>%s</b>"
-msgstr "Результати пошуку за запитом - <b>%s</ b>"
+msgstr ""
 
 #: inc/setup.php:239
 #, php-format
 msgid "Author archve: <b>%s</b>"
-msgstr "Архів автора: %s"
+msgstr ""
 
 #: inc/setup.php:240
 #, php-format
 msgid "Archive by <b>%d</b> year"
-msgstr "Архів за %d рік"
+msgstr ""
 
 #: inc/setup.php:241
 #, php-format
 msgid "Archive by: <b>%s</b>"
-msgstr "Архів за: <b>%s</b>"
+msgstr ""
 
 #: inc/setup.php:243
 #, php-format
 msgid "Media: %s"
-msgstr "Медіа: %s"
+msgstr ""
 
 #: inc/setup.php:244
 #, php-format
 msgid "Posts by tag: <b>%s</b>"
-msgstr "Записи по мітці: <b>%s</b>"
+msgstr ""
 
 #: inc/setup.php:245
 #, php-format
 msgid "%1$s from \"%2$s\" by tag: <b>%3$s</b>"
-msgstr "%1$s з \"%2$s\" по тегу: <b>%3$s</b>"
+msgstr ""
 
 #: inc/setup.php:260 inc/helpers.php:561
 msgid "View your shopping cart"
-msgstr ""
-
-#: inc/taxonomies.php:9 inc/helpers.php:597 inc/post-types/faculties.php:5
-msgid "Факультети"
 msgstr ""
 
 #: inc/taxonomies.php:10 inc/post-types/faculties.php:6
@@ -525,7 +520,7 @@ msgstr ""
 #: inc/customizer.php:377 inc/helpers.php:536 inc/shortcodes.php:399
 #: inc/shortcodes.php:408 inc/shortcodes.php:431
 msgid "Login"
-msgstr "Увійти"
+msgstr ""
 
 #: inc/customizer.php:378
 msgid "Customizer Custom Login"
@@ -605,11 +600,11 @@ msgstr ""
 
 #: inc/index-pagination.php:20
 msgid "<i class=\"fa fa-angle-left\"></i> Newer"
-msgstr "Свіжіший"
+msgstr ""
 
 #: inc/index-pagination.php:21
 msgid "Older <i class=\"fa fa-angle-right\"></i>"
-msgstr "Ранній"
+msgstr ""
 
 #: inc/feedback.php:30
 msgid "at"
@@ -617,11 +612,11 @@ msgstr ""
 
 #: inc/feedback.php:34
 msgid "Your comment is awaiting moderation."
-msgstr "Ваш коментар очікує на модерацію."
+msgstr ""
 
 #: inc/feedback.php:46
 msgid "Edit"
-msgstr "Редагувати"
+msgstr ""
 
 #: inc/helpers.php:539
 msgid "Logout"
@@ -629,7 +624,7 @@ msgstr ""
 
 #: inc/admin.php:10
 msgid "Developed by:"
-msgstr "Розробник:"
+msgstr ""
 
 #: inc/admin.php:11
 msgid "https://brainworks.com.ua"
@@ -655,7 +650,7 @@ msgstr ""
 
 #: inc/admin.php:53
 msgid "Support:"
-msgstr "Підтримка:"
+msgstr ""
 
 #: inc/admin.php:54 inc/admin.php:55
 msgid "web@brainworks.com.ua"
@@ -663,7 +658,7 @@ msgstr ""
 
 #: inc/admin.php:60
 msgid "Tel:"
-msgstr "Тел:"
+msgstr ""
 
 #: inc/admin.php:61 inc/admin.php:62
 msgid "+38 (063) 20-37-137"
@@ -691,33 +686,33 @@ msgstr ""
 
 #: inc/shortcodes.php:681
 msgid "Усі анонси"
-msgstr ""
+msgstr "All announcements"
 
 #: loops/content-search.php:21
 msgid "Sorry, your search yielded no results."
-msgstr "Ваш пошук не дав результату."
+msgstr ""
 
 #: loops/content-blog-1-sbl.php:15 loops/content-blog-3.php:12
 #: loops/content-blog-1-sbr.php:12 loops/content-blog-2.php:11
 msgid "By"
-msgstr "Автор"
+msgstr ""
 
 #: loops/content-blog-1-sbl.php:29 loops/content-blog-3.php:26
 #: loops/content-blog-1-sbr.php:26 loops/content-blog-2.php:25
 msgid "Category"
-msgstr "Категорія"
+msgstr ""
 
 #: loops/content-blog-1-sbl.php:31 loops/content-blog-3.php:28
 #: loops/content-blog-1-sbr.php:28 loops/content-blog-2.php:27
 #: loops/comments.php:20
 msgid "Comments"
-msgstr "Коментарі"
+msgstr ""
 
 #: loops/content-blog-1-sbl.php:32 loops/content-blog-3.php:29
 #: loops/content-blog-1-sbr.php:29 loops/content-blog-2.php:28
 #: loops/comments.php:21
 msgid "None"
-msgstr "Нет"
+msgstr ""
 
 #: loops/content-blog-1-sbl.php:45 loops/content.php:53
 #: loops/content-blog-3.php:42 loops/content-blog-1-sbr.php:45
@@ -725,7 +720,7 @@ msgstr "Нет"
 #: loops/content-blog-2.php:41 loops/content-advert.php:44
 #: loops/content-2.php:56
 msgid "Previous"
-msgstr "Попередній"
+msgstr ""
 
 #: loops/content-blog-1-sbl.php:46 loops/content.php:54
 #: loops/content-blog-3.php:43 loops/content-blog-1-sbr.php:46
@@ -733,7 +728,7 @@ msgstr "Попередній"
 #: loops/content-blog-2.php:42 loops/content-advert.php:45
 #: loops/content-2.php:57
 msgid "Next"
-msgstr "Наступний"
+msgstr ""
 
 #: loops/content.php:31
 msgid " <i class=\"glyphicon glyphicon-arrow-right\"></i>"
@@ -741,47 +736,47 @@ msgstr ""
 
 #: loops/comments.php:9
 msgid "This post is password protected. Enter the password to view comments."
-msgstr "Цей запис захищен. Введіть пароль, щоб побачити коментарі."
+msgstr ""
 
 #: loops/comments.php:18
 msgid "Feedback"
-msgstr "Відгук"
+msgstr ""
 
 #: loops/comments.php:56
 msgid "Logged in as"
-msgstr "Ви увійшли як"
+msgstr ""
 
 #: loops/comments.php:58
 msgid "Log out of this account"
-msgstr "Вийти з цього акаунту"
+msgstr ""
 
 #: loops/comments.php:58
 msgid "Log out"
-msgstr "Вийти"
+msgstr ""
 
 #: loops/comments.php:63 loops/comments.php:66
 msgid "Your name"
-msgstr "Ім'я"
+msgstr ""
 
 #: loops/comments.php:64
 msgid "(required)"
-msgstr "(обов'язково)"
+msgstr ""
 
 #: loops/comments.php:70 loops/comments.php:73
 msgid "Your email address"
-msgstr "Ваша електронна адреса"
+msgstr ""
 
 #: loops/comments.php:71
 msgid "(required, but will not be published)"
-msgstr "(обов'язково)"
+msgstr ""
 
 #: loops/comments.php:82 loops/comments.php:83
 msgid "Your comment"
-msgstr "Ваш коментар"
+msgstr ""
 
 #: loops/comments.php:88
 msgid "Submit comment"
-msgstr "Надіслати коментар"
+msgstr ""
 
 #: inc/post-types/concerts.php:8 inc/post-types/concerts.php:9
 #: inc/post-types/concerts.php:13
@@ -850,11 +845,11 @@ msgstr ""
 
 #: inc/post-types/reviews.php:8 inc/post-types/reviews.php:13
 msgid "Reviews"
-msgstr "Відгуки"
+msgstr ""
 
 #: inc/post-types/reviews.php:9
 msgid "Review"
-msgstr "Відгук"
+msgstr ""
 
 #: inc/post-types/departments.php:7
 msgid "Кафедра"
@@ -868,7 +863,7 @@ msgstr ""
 #: inc/post-types/advert.php:8 inc/post-types/advert.php:9
 #: inc/post-types/advert.php:13
 msgid "Оголошення"
-msgstr ""
+msgstr "Advertisement"
 
 #: inc/post-types/advert.php:47
 msgid "Оголошення (дані):"
