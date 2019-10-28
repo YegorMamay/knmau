@@ -153,19 +153,19 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-4">
-                <a href="/advert/" class="other-content-item">
+                <a href="<?php echo get_post_type_archive_link('advert'); ?>" class="other-content-item">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/announce.svg">
                     <p><?php _e('Advertisement', 'brainworks') ?></p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4">
-                <a href="/status-natsionalnogo/" class="other-content-item">
+                <a href="<?php echo get_permalink(pll_get_post(803)) ?>" class="other-content-item">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/reward.svg">
                     <p><?php _e('National status ', 'brainworks') ?></p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4">
-                <a href="/istoriya/" class="other-content-item">
+                <a href="<?php echo get_permalink(pll_get_post(3852)) ?>" class="other-content-item">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/library.svg">
                     <div class="sp-xs-1"></div>
                     <p><?php _e('History of UNTАM', 'brainworks') ?></p>
