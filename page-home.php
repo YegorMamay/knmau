@@ -41,7 +41,7 @@
                 <div class="sp-xs-2"></div>
                 <div class="text-right">
                     <a href="<?php echo $url ?>" target="_blank">
-                        <?php _e('Дивитися', 'brainworks'); ?>
+                        <?php _e('Watch', 'brainworks'); ?>
                     </a>
                 </div>
             </div>

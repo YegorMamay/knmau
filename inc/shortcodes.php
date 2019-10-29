@@ -678,7 +678,7 @@ if (!function_exists('bw_concerts_shortcode')) {
         endforeach;
         if (isset($terms[0]))
             $output .= '<div class="text-right"><a href="'.get_term_link($terms[0]->term_id).'" class="department-articles-link">
-                '.__('Усі анонси', 'brainworks').'<img src="'.get_template_directory_uri().'/assets/img/arrow-right-link.png" />
+                '.__('All', 'brainworks').'<img src="'.get_template_directory_uri().'/assets/img/arrow-right-link.png" />
             </a></div>';
 
         $output .= '</div></div>';
