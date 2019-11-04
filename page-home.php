@@ -66,35 +66,35 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <a href="/faculties/fortepiannij-fakultet/" class="shadow-hover">
+                <a href="<?php echo get_permalink(pll_get_post(173)) ?>" class="shadow-hover">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/piano-fac.svg"
                         alt="<?php _e('Piano faculty', 'brainworks') ?>">
                     <p><?php _e('Piano faculty', 'brainworks') ?></p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <a href="/faculties/vokalnij-ta-dirigentskij-fakultet/" class="shadow-hover">
+                <a href="<?php echo get_permalink(pll_get_post(4389)) ?>" class="shadow-hover">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/vocal-conductor-fac.svg"
                         alt="<?php _e('Vocal and conducting faculty', 'brainworks') ?>">
                     <p><?php _e('Vocal and conducting faculty', 'brainworks') ?></p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <a href="/faculties/orkestrovij-fakultet/" class="shadow-hover">
+                <a href="<?php echo get_permalink(pll_get_post(4390)) ?>" class="shadow-hover">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/orchestra-fac.svg"
                         alt="<?php _e('Orchestral faculty', 'brainworks') ?>">
                     <p><?php _e('Orchestral faculty', 'brainworks') ?></p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <a href="/faculties/fakultet-narodnih-instrumentiv/" class="shadow-hover">
+                <a href="<?php echo get_permalink(pll_get_post(4391)) ?>" class="shadow-hover">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/folk-instruments-fac.svg"
                         alt="<?php _e('Folk instrument faculty', 'brainworks') ?>">
                     <p><?php _e('Folk instrument faculty', 'brainworks') ?></p>
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <a href="faculties/fakultet-istoriko-teoretichnij-kompozitorskij-ta-inozemnih-studentiv/"
+                <a href="<?php echo get_permalink(pll_get_post(4392)) ?>"
                     class="shadow-hover">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/composer-fac.svg"
                         alt="<?php _e('Faculty of history and theory of music and composition, and foreign students', 'brainworks') ?>">
@@ -103,7 +103,7 @@
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <a href="/faculties/mizhfakultetski-kafedri/" class="shadow-hover">
+                <a href="<?php echo get_permalink(pll_get_post(4393)) ?>" class="shadow-hover">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/interdepartmental-fac.svg"
                         alt="<?php _e('Inter-faculty departments', 'brainworks') ?>">
                     <p><?php _e('Inter-faculty departments', 'brainworks') ?></p>
