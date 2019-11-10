@@ -212,13 +212,16 @@
   }
 
   &-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
 
-    @media screen and (max-width: 991px) {
-      flex-wrap: wrap;
+    @media screen and (max-width: 840px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 560px) {
+      grid-template-columns: 1fr;
     }
 
     &__item {
