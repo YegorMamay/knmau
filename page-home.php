@@ -103,10 +103,10 @@
                 </a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-2">
-                <a href="<?php echo get_permalink(pll_get_post(4393)) ?>" class="shadow-hover">
+                <a href="<?php echo get_permalink(pll_get_post(4743)) ?>" class="shadow-hover">
                     <img src="/wp-content/themes/knmau/assets/img/svg-icons/interdepartmental-fac.svg"
-                        alt="<?php _e('Inter-faculty departments', 'brainworks') ?>">
-                    <p><?php _e('Inter-faculty departments', 'brainworks') ?></p>
+                        alt="<?php _e('Department for work with foreign students', 'brainworks') ?>">
+                    <p><?php _e('Department for work with foreign students', 'brainworks') ?></p>
                 </a>
             </div>
         </div>
